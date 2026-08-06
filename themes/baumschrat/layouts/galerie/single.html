@@ -1,0 +1,38 @@
+{{ define "title" }}{{ .Title }} – Baumschrat{{ end }}
+{{ define "main" }}
+  {{ partial "nav.html" . }}
+  <div class="pt-16">
+    <div class="py-20 bg-emerald-50 min-h-screen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h1 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">{{ .Title }}</h1>
+          {{ with .Params.subtitle }}
+          <p class="text-xl text-emerald-700 max-w-2xl mx-auto">{{ . }}</p>
+          {{ end }}
+        </div>
+
+        {{ $images := sort (.Resources.ByType "image") ".Params.weight" }}
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {{ range $images }}
+          {{ $thumb := .Fill "600x600 q85" }}
+          <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow aspect-square">
+            <img
+              src="{{ $thumb.RelPermalink }}"
+              alt="{{ .Title }}"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              width="{{ $thumb.Width }}" height="{{ $thumb.Height }}"
+            >
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="mt-16 text-center">
+          <a href="/#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-medium transition-colors inline-block">
+            Kostenloses Angebot anfordern
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ partial "footer.html" . }}
+{{ end }}

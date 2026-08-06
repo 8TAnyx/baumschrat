@@ -1,0 +1,36 @@
+{{ define "title" }}{{ .Title }} – Baumschrat{{ end }}
+{{ define "main" }}
+  {{ partial "nav.html" . }}
+  <div class="pt-16">
+    <div class="py-20 bg-emerald-50 min-h-screen">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <a href="/#services" class="inline-flex items-center text-emerald-700 hover:text-emerald-900 mb-8 text-sm font-medium">
+          <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Alle Leistungen
+        </a>
+
+        <div class="bg-white rounded-xl shadow-sm border border-emerald-100 p-10">
+          <div class="flex items-center mb-6">
+            <div class="h-16 w-16 bg-emerald-100 rounded-full flex items-center justify-center mr-5 flex-shrink-0">
+              {{ partial "icons/service.html" (dict "icon" .Params.icon) }}
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-emerald-900">{{ .Title }}</h1>
+          </div>
+          <div class="prose prose-emerald max-w-none text-gray-700 text-lg leading-relaxed">
+            {{ .Content }}
+          </div>
+          <div class="mt-10 pt-8 border-t border-emerald-100">
+            <a href="/#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center">
+              Kostenloses Angebot anfordern
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  {{ partial "footer.html" . }}
+{{ end }}

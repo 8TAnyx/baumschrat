@@ -1,0 +1,82 @@
+{{ with site.GetPage "/galerie" }}
+{{ $images := sort (.Resources.ByType "image") ".Params.weight" }}
+<section id="galerie" class="py-20 bg-emerald-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">{{ .Title }}</h2>
+      <p class="text-xl text-emerald-700 max-w-2xl mx-auto">{{ .Params.subtitle }}</p>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto">
+      <!-- Main images -->
+      <div class="relative h-96 md:h-[500px] overflow-hidden rounded-lg shadow-lg">
+        {{ range $i, $img := $images }}
+        {{ $full := $img.Fill "1200x600 q85 Center" }}
+        <img
+          src="{{ $full.RelPermalink }}"
+          alt="{{ $img.Title }}"
+          class="gallery-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-300{{ if ne $i 0 }} opacity-0{{ end }}"
+          data-index="{{ $i }}"
+          width="{{ $full.Width }}" height="{{ $full.Height }}"
+        >
+        {{ end }}
+
+        <button id="gallery-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors" aria-label="Vorheriges Bild">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <button id="gallery-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors" aria-label="Nächstes Bild">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+          <span id="gallery-counter">1 / {{ len $images }}</span>
+        </div>
+      </div>
+
+      <!-- Thumbnails (Hugo generates 128×128 crops automatically) -->
+      <div class="flex justify-center mt-6 space-x-2 overflow-x-auto pb-2">
+        {{ range $i, $img := $images }}
+        {{ $thumb := $img.Fill "128x128 q80" }}
+        <button
+          class="gallery-thumb flex-shrink-0 w-16 h-16 rounded overflow-hidden border-2 transition-all{{ if eq $i 0 }} border-emerald-500{{ else }} border-transparent opacity-60{{ end }}"
+          data-index="{{ $i }}"
+          aria-label="Bild {{ add $i 1 }}"
+        >
+          <img src="{{ $thumb.RelPermalink }}" alt="{{ $img.Title }}" class="w-full h-full object-cover" width="128" height="128">
+        </button>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<script>
+(function() {
+  const slides = document.querySelectorAll('.gallery-slide');
+  const thumbs = document.querySelectorAll('.gallery-thumb');
+  const counter = document.getElementById('gallery-counter');
+  let current = 0;
+
+  function show(index) {
+    slides[current].classList.add('opacity-0');
+    thumbs[current].classList.remove('border-emerald-500');
+    thumbs[current].classList.add('border-transparent', 'opacity-60');
+
+    current = (index + slides.length) % slides.length;
+
+    slides[current].classList.remove('opacity-0');
+    thumbs[current].classList.add('border-emerald-500');
+    thumbs[current].classList.remove('border-transparent', 'opacity-60');
+    counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+
+  document.getElementById('gallery-prev').addEventListener('click', () => show(current - 1));
+  document.getElementById('gallery-next').addEventListener('click', () => show(current + 1));
+  thumbs.forEach(t => t.addEventListener('click', () => show(parseInt(t.dataset.index))));
+  setInterval(() => show(current + 1), 5000);
+})();
+</script>

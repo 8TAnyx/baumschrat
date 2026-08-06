@@ -1,0 +1,14 @@
+{{ define "title" }}{{ .Title }} – Baumschrat{{ end }}
+{{ define "main" }}
+<div style="font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #1a2e18; max-width: 850px; margin: 40px auto; padding: 20px; background-color: #f8f9f8;">
+  <div style="background: white; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0;">
+    <h1 style="color: #064e3b;">{{ .Title }}</h1>
+    {{ .Content }}
+    <p style="margin-top: 40px;"><a href="/" style="color: #059669; font-weight: bold;">&larr; Zurück zur Website</a></p>
+  </div>
+</div>
+<style>
+  h2 { color: #064e3b; }
+  a { color: #059669; font-weight: bold; }
+</style>
+{{ end }}

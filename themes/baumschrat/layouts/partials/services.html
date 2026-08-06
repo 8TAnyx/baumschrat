@@ -1,0 +1,35 @@
+{{ with site.GetPage "/leistungen" }}
+<section id="services" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{{ .Title }}</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">{{ .Params.subtitle }}</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {{ range .Pages.ByWeight }}
+      <div class="hover:shadow-lg transition-shadow duration-300 border border-emerald-100 rounded-lg p-6">
+        <div class="text-center">
+          <div class="h-16 w-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            {{ partial "icons/service.html" (dict "icon" .Params.icon) }}
+          </div>
+          <h3 class="text-2xl text-emerald-800 font-semibold mb-3">
+            <a href="{{ .RelPermalink }}" class="hover:text-emerald-900 transition-colors">{{ .Title }}</a>
+          </h3>
+          <p class="text-lg text-gray-600">{{ .Plain }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ with .Params.network_title }}
+    <div class="mt-12 text-center">
+      <div class="bg-emerald-50 rounded-lg p-6 max-w-4xl mx-auto border border-emerald-100">
+        <h3 class="text-xl font-semibold text-emerald-900 mb-3">{{ . }}</h3>
+        <p class="text-emerald-800">{{ $.Params.network_text }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

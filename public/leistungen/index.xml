@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unsere Leistungen on Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</title>
+    <link>//localhost:1313/leistungen/</link>
+    <description>Recent content in Unsere Leistungen on Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <atom:link href="//localhost:1313/leistungen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spezialfällungen</title>
+      <link>//localhost:1313/leistungen/spezialfaellungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/leistungen/spezialfaellungen/</guid>
+      <description>&lt;p&gt;Sichere Entfernung schwer zugänglicher Bäume mit spezieller Klettertechnik und professioneller Ausrüstung. Auch in beengten Verhältnissen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Abtragungen</title>
+      <link>//localhost:1313/leistungen/abtragungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/leistungen/abtragungen/</guid>
+      <description>&lt;p&gt;Professionelle Baumdemontage in Teilstücken für maximale Sicherheit. Schonend für Umgebung und Nachbarschaft.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Baumschnitt</title>
+      <link>//localhost:1313/leistungen/baumschnitt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/leistungen/baumschnitt/</guid>
+      <description>&lt;p&gt;Fachgerechter Baumschnitt nach Ihren individuellen Wünschen. Für gesunde Bäume und optimales Wachstum.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

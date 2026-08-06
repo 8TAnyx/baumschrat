@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ block "description" . }}{{ .Site.Params.description }}{{ end }}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50:  '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              400: '#34d399',
+              500: '#10b981',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            orange: {
+              500: '#f97316',
+              600: '#ea6c0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    #dsgvo-legal-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(6, 78, 59, 0.9);
+      color: #ffffff;
+      text-align: center;
+      padding: 8px 0;
+      font-family: sans-serif;
+      font-size: 12px;
+      z-index: 999999;
+    }
+    #dsgvo-legal-bar a {
+      color: #a7f3d0;
+      text-decoration: underline;
+      margin-left: 5px;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+  {{ block "head" . }}{{ end }}
+</head>
+<body class="min-h-screen bg-white">
+  {{ block "main" . }}{{ end }}
+
+  <div id="dsgvo-legal-bar">
+    &copy; 2026 {{ .Site.Params.copyright_name }} |
+    <a href="{{ .Site.Params.wko_url }}" target="_blank" rel="noopener noreferrer">Impressum (WKO)</a> |
+    <a href="/datenschutz/">Datenschutz</a>
+  </div>
+</body>
+</html>
