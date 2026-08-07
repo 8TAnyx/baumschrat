@@ -4,7 +4,7 @@
   <div class="content-page-inner">
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    <p class="back-link"><a href="/">&larr; Zurück zur Website</a></p>
+    <p class="back-link"><a href="{{ "" | relURL }}">&larr; Zurück zur Website</a></p>
   </div>
 </div>
 {{ end }}

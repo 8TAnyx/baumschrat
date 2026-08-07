@@ -2,8 +2,8 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center">
-        <a href="/" class="flex items-center">
-          <img src="/images/logo.png" alt="Baumschrat Logo" class="h-10 w-10">
+        <a href="{{ "" | relURL }}" class="flex items-center">
+          <img src="{{ "images/logo.png" | relURL }}" alt="Baumschrat Logo" class="h-10 w-10">
           <span class="ml-2 text-xl font-bold text-gray-900">Baumschrat</span>
         </a>
       </div>
@@ -11,11 +11,11 @@
       <!-- Desktop nav -->
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
-          <a href="/#services" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Leistungen</a>
-          <a href="/#about" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Über uns</a>
-          <a href="/#galerie" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Galerie</a>
-          <a href="/#contact" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Kontakt</a>
-          <a href="/#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Angebot anfordern</a>
+          <a href="{{ "#services" | relURL }}" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Leistungen</a>
+          <a href="{{ "#about" | relURL }}" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Über uns</a>
+          <a href="{{ "#galerie" | relURL }}" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Galerie</a>
+          <a href="{{ "#contact" | relURL }}" class="text-gray-700 hover:text-emerald-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Kontakt</a>
+          <a href="{{ "#contact" | relURL }}" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Angebot anfordern</a>
         </div>
       </div>
 
@@ -35,11 +35,11 @@
 
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-    <a href="/#services" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Leistungen</a>
-    <a href="/#about" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Über uns</a>
-    <a href="/#galerie" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Galerie</a>
-    <a href="/#contact" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Kontakt</a>
-    <a href="/#contact" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Angebot anfordern</a>
+    <a href="{{ "#services" | relURL }}" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Leistungen</a>
+    <a href="{{ "#about" | relURL }}" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Über uns</a>
+    <a href="{{ "#galerie" | relURL }}" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Galerie</a>
+    <a href="{{ "#contact" | relURL }}" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Kontakt</a>
+    <a href="{{ "#contact" | relURL }}" class="text-gray-700 hover:text-emerald-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Angebot anfordern</a>
   </div>
 </nav>
 

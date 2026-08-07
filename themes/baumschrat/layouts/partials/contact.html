@@ -161,7 +161,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   };
 
   try {
-    const res = await fetch('/send_email.php', {
+    const res = await fetch('{{ "send_email.php" | relURL }}', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),

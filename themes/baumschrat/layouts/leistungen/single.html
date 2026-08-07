@@ -5,7 +5,7 @@
     <div class="py-20 bg-emerald-50 min-h-screen">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <a href="/#services" class="inline-flex items-center text-emerald-700 hover:text-emerald-900 mb-8 text-sm font-medium">
+        <a href="{{ "#services" | relURL }}" class="inline-flex items-center text-emerald-700 hover:text-emerald-900 mb-8 text-sm font-medium">
           <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
           </svg>
@@ -23,7 +23,7 @@
             {{ .Content }}
           </div>
           <div class="mt-10 pt-8 border-t border-emerald-100">
-            <a href="/#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center">
+            <a href="{{ "#contact" | relURL }}" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center">
               Kostenloses Angebot anfordern
             </a>
           </div>

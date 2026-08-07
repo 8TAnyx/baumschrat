@@ -28,7 +28,12 @@ jobs:
           extended: true
 
       - name: Build site
-        run: hugo --minify
+        run: |
+          if [ "${{ github.ref_name }}" = "test" ]; then
+            hugo --minify --baseURL "/test/"
+          else
+            hugo --minify
+          fi
 
       - name: Deploy to production (main)
         if: github.ref == 'refs/heads/main'

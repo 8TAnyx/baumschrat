@@ -34,7 +34,13 @@ html {
 }
 
 #home {
-  background-image: url('/images/hero-background.jpg');
+  background-image: url('../images/hero-background.jpg');
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .content-page {

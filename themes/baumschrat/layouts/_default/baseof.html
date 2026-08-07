@@ -2,11 +2,11 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ block "description" . }}{{ .Site.Params.description }}{{ end }}">
-  <link rel="stylesheet" href="/css/theme.css" />
+  <link rel="stylesheet" href="{{ "css/theme.css" | relURL }}" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -36,7 +36,7 @@
   <div id="dsgvo-legal-bar">
     &copy; 2026 {{ .Site.Params.copyright_name }} |
     <a href="{{ .Site.Params.wko_url }}" target="_blank" rel="noopener noreferrer">Impressum (WKO)</a> |
-    <a href="/datenschutz/">Datenschutz</a>
+    <a href="{{ "datenschutz/" | relURL }}">Datenschutz</a>
   </div>
 </body>
 </html>
