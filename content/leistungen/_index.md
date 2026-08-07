@@ -1,5 +1,6 @@
 ---
 title: "Unsere Baumschnitt-Leistungen"
+description: "Professionelle Baumarbeiten in Graz: Baumfällung, Spezialfällungen, Abtragungen und Drohneninspektion – sicher, zuverlässig und mit moderner Ausrüstung."
 params:
   subtitle: "Professionelle Baumarbeiten mit modernster Ausrüstung und jahrelanger Erfahrung"
   network_title: "Vollständige Abdeckung aller Bereiche"

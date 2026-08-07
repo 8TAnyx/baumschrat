@@ -1,5 +1,6 @@
 ---
 title: "Einblicke in Baumschnitt und Baumfällung"
+description: "Einblicke in professionelle Baumfällungen und Baumschnitt in Graz und Umgebung – Fotos unserer Arbeiten von Baumschrat."
 params:
   subtitle: "Unsere professionellen Baumarbeiten in der Region Graz"
 resources:

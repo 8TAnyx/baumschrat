@@ -1,5 +1,6 @@
 ---
 title: "Datenschutzerklärung"
+description: "Datenschutzerklärung von Baumschrat – Informationen zur Verarbeitung Ihrer Daten bei Kontaktaufnahme und Auftragsabwicklung."
 layout: "datenschutz"
 ---
 

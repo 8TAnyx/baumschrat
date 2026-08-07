@@ -1,53 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content on Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</description>
-    <generator>Hugo</generator>
-    <language>de</language>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Baum fällen</title>
-      <link>//localhost:1313/leistungen/baumschnitt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/leistungen/baumschnitt/</guid>
-      <description>&lt;p&gt;Professionelle Baumfällung nach Ihren individuellen Wünschen. Für gesunde Bäume, optimales Wachstum und langfristigen Baumschutz.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Spezialfällungen</title>
-      <link>//localhost:1313/leistungen/spezialfaellungen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/leistungen/spezialfaellungen/</guid>
-      <description>&lt;p&gt;Sichere Entfernung schwer zugänglicher Bäume mit spezieller Klettertechnik und professioneller Ausrüstung. Auch in beengten Verhältnissen.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Abtragungen</title>
-      <link>//localhost:1313/leistungen/abtragungen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/leistungen/abtragungen/</guid>
-      <description>&lt;p&gt;Professionelle Baumdemontage in Teilstücken für maximale Sicherheit. Schonend für Umgebung und Nachbarschaft.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Drohneninspektion</title>
-      <link>//localhost:1313/leistungen/drohneninspektion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/leistungen/drohneninspektion/</guid>
-      <description>&lt;p&gt;Schnelle Inspektion von Bäumen mit modernster Drohnentechnologie.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Datenschutzerklärung</title>
-      <link>//localhost:1313/datenschutz/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/datenschutz/</guid>
-      <description>&lt;h2 id=&#34;1-verantwortlicher&#34;&gt;1. Verantwortlicher&lt;/h2&gt;&#xA;&lt;p&gt;Daniel Lindner&lt;br&gt;&#xA;Janzgasse 14&lt;br&gt;&#xA;8020-Graz&lt;br&gt;&#xA;Tel.: +43 650 9999 539&lt;br&gt;&#xA;E-mail: &lt;a href=&#34;mailto:daniel@baumschrat.at&#34;&gt;daniel@baumschrat.at&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-kontakt-mit-mir&#34;&gt;2. Kontakt mit mir&lt;/h2&gt;&#xA;&lt;p&gt;Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit mir aufnehmen, werden Ihre angegebenen Daten (Name, E-Mail, Telefonnummer sowie Informationen zum Einsatzort) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen (z.B. für eine Besichtigung vor Ort oder zur Angebotserstellung) bei mir gespeichert. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Einblicke in Baumschnitt und Baumfällung</title>
-      <link>//localhost:1313/galerie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/galerie/</guid>
-      <description></description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</title><link>https://www.baumschrat.at/</link><description>Recent content on Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</description><generator>Hugo</generator><language>de</language><atom:link href="https://www.baumschrat.at/index.xml" rel="self" type="application/rss+xml"/><item><title>Baum fällen</title><link>https://www.baumschrat.at/leistungen/baumschnitt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.baumschrat.at/leistungen/baumschnitt/</guid><description>&lt;p&gt;Professionelle Baumfällung nach Ihren individuellen Wünschen. Für gesunde Bäume, optimales Wachstum und langfristigen Baumschutz.&lt;/p&gt;</description></item><item><title>Spezialfällungen</title><link>https://www.baumschrat.at/leistungen/spezialfaellungen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.baumschrat.at/leistungen/spezialfaellungen/</guid><description>&lt;p&gt;Sichere Entfernung schwer zugänglicher Bäume mit spezieller Klettertechnik und professioneller Ausrüstung. Auch in beengten Verhältnissen.&lt;/p&gt;</description></item><item><title>Abtragungen</title><link>https://www.baumschrat.at/leistungen/abtragungen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.baumschrat.at/leistungen/abtragungen/</guid><description>&lt;p&gt;Professionelle Baumdemontage in Teilstücken für maximale Sicherheit. Schonend für Umgebung und Nachbarschaft.&lt;/p&gt;</description></item><item><title>Drohneninspektion</title><link>https://www.baumschrat.at/leistungen/drohneninspektion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.baumschrat.at/leistungen/drohneninspektion/</guid><description>&lt;p&gt;Schnelle Inspektion von Bäumen mit modernster Drohnentechnologie.&lt;/p&gt;</description></item><item><title>Datenschutzerklärung</title><link>https://www.baumschrat.at/datenschutz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.baumschrat.at/datenschutz/</guid><description>&lt;h2 id="1-verantwortlicher"&gt;1. Verantwortlicher&lt;/h2&gt;
+&lt;p&gt;Daniel Lindner&lt;br&gt;
+Janzgasse 14&lt;br&gt;
+8020-Graz&lt;br&gt;
+Tel.: +43 650 9999 539&lt;br&gt;
+E-mail: &lt;a href="mailto:daniel@baumschrat.at"&gt;daniel@baumschrat.at&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="2-kontakt-mit-mir"&gt;2. Kontakt mit mir&lt;/h2&gt;
+&lt;p&gt;Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit mir aufnehmen, werden Ihre angegebenen Daten (Name, E-Mail, Telefonnummer sowie Informationen zum Einsatzort) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen (z.B. für eine Besichtigung vor Ort oder zur Angebotserstellung) bei mir gespeichert. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter.&lt;/p&gt;</description></item><item><title>Einblicke in Baumschnitt und Baumfällung</title><link>https://www.baumschrat.at/galerie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.baumschrat.at/galerie/</guid><description/></item></channel></rss>
