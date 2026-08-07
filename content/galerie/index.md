@@ -1,7 +1,7 @@
 ---
-title: "Unsere Arbeit in Bildern"
+title: "Einblicke in Baumschnitt und Baumfällung"
 params:
-  subtitle: "Einblicke in unsere professionellen Baumarbeiten in der Region Graz"
+  subtitle: "Unsere professionellen Baumarbeiten in der Region Graz"
 resources:
   - src: "work-1.jpg"
     title: "Professionelle Baumfällung mit Klettertechnik"

@@ -1,6 +1,6 @@
 ---
 title: "Spezialfällungen"
-weight: 10
+weight: 20
 params:
   icon: "tree-deciduous"
 ---

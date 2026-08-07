@@ -1,6 +1,6 @@
 ---
 title: "Abtragungen"
-weight: 20
+weight: 30
 params:
   icon: "tree-palm"
 ---
