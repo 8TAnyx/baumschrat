@@ -25,7 +25,7 @@
       <!-- Right column: images -->
       <div class="space-y-6">
         {{ range .Params.images }}
-        <img src="{{ .src | relURL }}" alt="{{ .alt }}" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <img src="{{ .src | strings.TrimPrefix "/" | relURL }}" alt="{{ .alt }}" class="w-full h-64 object-cover rounded-lg shadow-lg">
         {{ end }}
       </div>
 
