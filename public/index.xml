@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</title>
-    <link>https://www.baumschrat.at/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Baumschrat - Ihr Experte für professionelle Baumarbeiten in Graz</description>
     <generator>Hugo</generator>
     <language>de</language>
     <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.baumschrat.at/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Baum fällen</title>
-      <link>https://www.baumschrat.at/leistungen/baumschnitt/</link>
+      <link>http://localhost:1313/leistungen/baumschnitt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/leistungen/baumschnitt/</guid>
+      <guid>http://localhost:1313/leistungen/baumschnitt/</guid>
       <description>&lt;p&gt;Professionelle Baumfällung nach Ihren individuellen Wünschen. Für gesunde Bäume, optimales Wachstum und langfristigen Baumschutz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spezialfällungen</title>
-      <link>https://www.baumschrat.at/leistungen/spezialfaellungen/</link>
+      <link>http://localhost:1313/leistungen/spezialfaellungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/leistungen/spezialfaellungen/</guid>
+      <guid>http://localhost:1313/leistungen/spezialfaellungen/</guid>
       <description>&lt;p&gt;Sichere Entfernung schwer zugänglicher Bäume mit spezieller Klettertechnik und professioneller Ausrüstung. Auch in beengten Verhältnissen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Abtragungen</title>
-      <link>https://www.baumschrat.at/leistungen/abtragungen/</link>
+      <link>http://localhost:1313/leistungen/abtragungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/leistungen/abtragungen/</guid>
+      <guid>http://localhost:1313/leistungen/abtragungen/</guid>
       <description>&lt;p&gt;Professionelle Baumdemontage in Teilstücken für maximale Sicherheit. Schonend für Umgebung und Nachbarschaft.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drohneninspektion</title>
-      <link>https://www.baumschrat.at/leistungen/drohneninspektion/</link>
+      <link>http://localhost:1313/leistungen/drohneninspektion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/leistungen/drohneninspektion/</guid>
+      <guid>http://localhost:1313/leistungen/drohneninspektion/</guid>
       <description>&lt;p&gt;Schnelle Inspektion von Bäumen mit modernster Drohnentechnologie.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Baumabtragung unter beengten Verhältnissen</title>
-      <link>https://www.baumschrat.at/ratgeber/baumabtragung-beengte-verhaeltnisse/</link>
+      <link>http://localhost:1313/ratgeber/baumabtragung-beengte-verhaeltnisse/</link>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/baumabtragung-beengte-verhaeltnisse/</guid>
+      <guid>http://localhost:1313/ratgeber/baumabtragung-beengte-verhaeltnisse/</guid>
       <description>&lt;p&gt;In vielen Gärten, Innenhöfen oder direkt an Gebäuden fehlt schlicht der Platz für eine klassische Baumfällung.&lt;/p&gt;&#xA;&lt;img src=&#34;titelbild.jpg&#34; alt=&#34;Baumabtragung in Teilstücken mit Klettertechnik&#34; title=&#34;Abtragung eines Baumes mit spezieller Klettertechnik unter beengten Platzverhältnissen&#34;&gt;&#xA;&lt;p&gt;Steht ein Baum zu nah an einem Haus, einer Stromleitung, einer Mauer oder in einem dicht bebauten Grundstück, ist eine sogenannte Abtragung notwendig – die kontrollierte Entfernung des Baumes in einzelnen, kleinen Teilstücken.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wann ist die beste Zeit für Baumschnitt?</title>
-      <link>https://www.baumschrat.at/ratgeber/beste-zeit-fuer-baumschnitt/</link>
+      <link>http://localhost:1313/ratgeber/beste-zeit-fuer-baumschnitt/</link>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/beste-zeit-fuer-baumschnitt/</guid>
+      <guid>http://localhost:1313/ratgeber/beste-zeit-fuer-baumschnitt/</guid>
       <description>&lt;p&gt;Der richtige Zeitpunkt für den Baumschnitt hängt stark von der Baumart und dem Ziel des Schnitts ab. Als grobe Regel gilt: Die Wintermonate zwischen November und Februar sind für die meisten Laubbäume ideal, da die Bäume in dieser Zeit keinen Saft ziehen und Schnittwunden besser verheilen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trockenstress bei Bäumen: Warnzeichen erkennen, bevor es zu spät ist</title>
-      <link>https://www.baumschrat.at/ratgeber/trockenstress-baeume-erkennen/</link>
+      <link>http://localhost:1313/ratgeber/trockenstress-baeume-erkennen/</link>
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/trockenstress-baeume-erkennen/</guid>
+      <guid>http://localhost:1313/ratgeber/trockenstress-baeume-erkennen/</guid>
       <description>&lt;p&gt;Der Sommer 2026 macht vielen Bäumen in der Steiermark zu schaffen.&lt;/p&gt;&#xA;&lt;img src=&#34;titelbild.jpg&#34; alt=&#34;Baumpflege mit Hubarbeitsbühne in der grünen Krone eines großen Baumes&#34; title=&#34;Kronenkontrolle bei einem großen Baum im Sommer&#34;&gt;&#xA;&lt;p&gt;Nach einem schneearmen Winter waren die Waldböden schon zu Frühlingsbeginn vielerorts zu trocken, die Wasserspeicher weitgehend erschöpft. Der WWF Österreich warnt in seiner Winterbilanz Wald ausdrücklich vor einem schwierigen Waldjahr 2026 – mit spürbaren Folgen bis in Privatgärten und Grazer Straßenzüge.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Baumkontrolle aus der Luft: Wie Drohnentechnologie die Baumpflege verändert</title>
-      <link>https://www.baumschrat.at/ratgeber/drohneninspektion-moderne-baumkontrolle/</link>
+      <link>http://localhost:1313/ratgeber/drohneninspektion-moderne-baumkontrolle/</link>
       <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/drohneninspektion-moderne-baumkontrolle/</guid>
+      <guid>http://localhost:1313/ratgeber/drohneninspektion-moderne-baumkontrolle/</guid>
       <description>&lt;p&gt;Die klassische Baumkontrolle in Österreich ist in der ÖNORM L1122 klar geregelt: eine regelmäßige, idealerweise jährliche Sichtkontrolle durch geschultes Personal.&lt;/p&gt;&#xA;&lt;img src=&#34;titelbild.jpg&#34; alt=&#34;Blick von der Baumkrone hinab über die Dächer von Graz&#34; title=&#34;Perspektive von oben: Baumkontrolle aus der Kronenperspektive&#34;&gt;&#xA;&lt;p&gt;Bei Bedarf ergänzt durch Resistograph-Messungen oder Schalltomographie zur Beurteilung der inneren Holzstruktur. Was in diesen Methoden oft zu kurz kommt, ist ein Blick auf das, was sich weit oben in der Krone abspielt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Baum fällen in Graz: Was die Baumschutzverordnung erlaubt – und was nicht</title>
-      <link>https://www.baumschrat.at/ratgeber/baumschutzverordnung-graz-baum-faellen/</link>
+      <link>http://localhost:1313/ratgeber/baumschutzverordnung-graz-baum-faellen/</link>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/baumschutzverordnung-graz-baum-faellen/</guid>
+      <guid>http://localhost:1313/ratgeber/baumschutzverordnung-graz-baum-faellen/</guid>
       <description>&lt;p&gt;&amp;ldquo;Das ist doch mein eigener Baum, den kann ich fällen, wann ich will&amp;rdquo; – dieser Satz führt in Graz schneller zu einer Strafe als man denkt.&lt;/p&gt;&#xA;&lt;img src=&#34;titelbild.jpg&#34; alt=&#34;Klettergurt und Motorsäge bereitgelegt für einen fachgerechten Baumeinsatz&#34; title=&#34;Ausrüstung für einen genehmigten, fachgerechten Baumeinsatz&#34;&gt;&#xA;&lt;p&gt;In der Landeshauptstadt regelt die Grazer Baumschutzverordnung sehr genau, welche Bäume geschützt sind und wann eine behördliche Genehmigung notwendig ist – auch auf privaten Grundstücken.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Haftung bei Baumschäden: Was Grundstückseigentümer in der Steiermark wissen müssen</title>
-      <link>https://www.baumschrat.at/ratgeber/verkehrssicherungspflicht-baeume-haftung/</link>
+      <link>http://localhost:1313/ratgeber/verkehrssicherungspflicht-baeume-haftung/</link>
       <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/verkehrssicherungspflicht-baeume-haftung/</guid>
+      <guid>http://localhost:1313/ratgeber/verkehrssicherungspflicht-baeume-haftung/</guid>
       <description>&lt;p&gt;Nach den Stürmen und Unwettern der letzten Monate in der Steiermark stellt sich für viele Grundstückseigentümer eine unangenehme Frage.&lt;/p&gt;&#xA;&lt;img src=&#34;titelbild.jpg&#34; alt=&#34;Baumkletterer bei der winterlichen Kontrolle eines Laubbaumes&#34; title=&#34;Regelmäßige Baumkontrolle als Teil der Verkehrssicherungspflicht&#34;&gt;&#xA;&lt;p&gt;Was passiert eigentlich, wenn &amp;ldquo;mein&amp;rdquo; Baum bei Sturm auf das Nachbarhaus, ein parkendes Auto oder einen Weg fällt? Die Antwort hat in Österreich einen Namen: Verkehrssicherungspflicht.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sturmschäden 2026: Warum beschädigte Fichten jetzt schnell entfernt werden müssen</title>
-      <link>https://www.baumschrat.at/ratgeber/sturmschaeden-borkenkaefer-2026/</link>
+      <link>http://localhost:1313/ratgeber/sturmschaeden-borkenkaefer-2026/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/sturmschaeden-borkenkaefer-2026/</guid>
+      <guid>http://localhost:1313/ratgeber/sturmschaeden-borkenkaefer-2026/</guid>
       <description>&lt;p&gt;Das Jahr 2026 hat der Steiermark bereits mehrere schwere Unwetter beschert – mit deutlichen Spuren im Baumbestand.&lt;/p&gt;&#xA;&lt;img src=&#34;titelbild.jpg&#34; alt=&#34;Baumkletterer bei der Fällung eines beschädigten Baumes in luftiger Höhe&#34; title=&#34;Kontrollierte Entfernung eines geschädigten Baumes&#34;&gt;&#xA;&lt;p&gt;Erst deckte im Februar nasser Schnee ganze Waldstücke im Süden und Osten des Bundeslandes ab, dann fegte im März das Sturmtief &amp;ldquo;Marlies&amp;rdquo; über das Land, und im Juni sorgten heftige Gewitter mit Starkregen – allein am Flughafen Graz wurden binnen zwei Tagen über 100 Liter Niederschlag pro Quadratmeter gemessen – für weitere umgestürzte und beschädigte Bäume. Der Steiermärkische Landesfeuerwehrverband zählte allein rund um &amp;ldquo;Marlies&amp;rdquo; über 500 Einsätze binnen anderthalb Tagen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Die Kastanienminiermotte ist zurück: Was Besitzer von Rosskastanien jetzt tun sollten</title>
-      <link>https://www.baumschrat.at/ratgeber/kastanienminiermotte-graz/</link>
+      <link>http://localhost:1313/ratgeber/kastanienminiermotte-graz/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/ratgeber/kastanienminiermotte-graz/</guid>
+      <guid>http://localhost:1313/ratgeber/kastanienminiermotte-graz/</guid>
       <description>&lt;p&gt;Wenn die Blätter Ihrer Rosskastanie im Hochsommer plötzlich braun werden und abfallen, obwohl noch gar nicht Herbst ist, steckt meist derselbe Schädling dahinter.&lt;/p&gt;&#xA;&lt;img src=&#34;titelbild.jpg&#34; alt=&#34;Blick über die grünen Baumkronen von Graz im Sommer&#34; title=&#34;Sommerliche Baumkronen über den Dächern von Graz&#34;&gt;&#xA;&lt;p&gt;Die Kastanienminiermotte (Cameraria ohridella) ist der Übeltäter. Für Ostösterreich – Graz und die Steiermark eingeschlossen – lief 2026 eine aktuelle Warnmeldung von Anfang Mai bis Anfang Juni.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Datenschutzerklärung</title>
-      <link>https://www.baumschrat.at/datenschutz/</link>
+      <link>http://localhost:1313/datenschutz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/datenschutz/</guid>
+      <guid>http://localhost:1313/datenschutz/</guid>
       <description>&lt;h2 id=&#34;1-verantwortlicher&#34;&gt;1. Verantwortlicher&lt;/h2&gt;&#xA;&lt;p&gt;Daniel Lindner&lt;br&gt;&#xA;Janzgasse 14&lt;br&gt;&#xA;8020-Graz&lt;br&gt;&#xA;Tel.: +43 650 9999 539&lt;br&gt;&#xA;E-mail: &lt;a href=&#34;mailto:daniel@baumschrat.at&#34;&gt;daniel@baumschrat.at&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-kontakt-mit-mir&#34;&gt;2. Kontakt mit mir&lt;/h2&gt;&#xA;&lt;p&gt;Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit mir aufnehmen, werden Ihre angegebenen Daten (Name, E-Mail, Telefonnummer sowie Informationen zum Einsatzort) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen (z.B. für eine Besichtigung vor Ort oder zur Angebotserstellung) bei mir gespeichert. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Einblicke in Baumschnitt und Baumfällung</title>
-      <link>https://www.baumschrat.at/galerie/</link>
+      <link>http://localhost:1313/galerie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.baumschrat.at/galerie/</guid>
+      <guid>http://localhost:1313/galerie/</guid>
       <description></description>
     </item>
   </channel>
