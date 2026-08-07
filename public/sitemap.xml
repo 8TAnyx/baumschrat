@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/leistungen/spezialfaellungen/</loc>
+    <loc>http://localhost:1313/leistungen/baumschnitt/</loc>
   </url><url>
-    <loc>//localhost:1313/leistungen/abtragungen/</loc>
+    <loc>http://localhost:1313/leistungen/spezialfaellungen/</loc>
   </url><url>
-    <loc>//localhost:1313/leistungen/baumschnitt/</loc>
+    <loc>http://localhost:1313/leistungen/abtragungen/</loc>
   </url><url>
-    <loc>//localhost:1313/leistungen/drohneninspektion/</loc>
+    <loc>http://localhost:1313/leistungen/drohneninspektion/</loc>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>//localhost:1313/datenschutz/</loc>
+    <loc>http://localhost:1313/datenschutz/</loc>
   </url><url>
-    <loc>//localhost:1313/galerie/</loc>
+    <loc>http://localhost:1313/galerie/</loc>
   </url><url>
-    <loc>//localhost:1313/leistungen/</loc>
+    <loc>http://localhost:1313/leistungen/</loc>
   </url>
 </urlset>

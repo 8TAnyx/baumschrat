@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.baumschrat.at/"
 locale = "de"
 defaultContentLanguage = "de"
 disableKinds = ["taxonomy", "term"]

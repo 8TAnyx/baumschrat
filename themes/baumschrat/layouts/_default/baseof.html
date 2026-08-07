@@ -5,7 +5,39 @@
   <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ block "description" . }}{{ .Site.Params.description }}{{ end }}">
+  {{ $desc := .Description | default .Site.Params.description }}
+  {{ $image := "images/logo.png" | absURL }}
+  <meta name="description" content="{{ $desc }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Baumschrat">
+  <meta property="og:title" content="{{ template "title" . }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ $image }}">
+  <meta property="og:locale" content="de_AT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ template "title" . }}">
+  <meta name="twitter:description" content="{{ $desc }}">
+  <meta name="twitter:image" content="{{ $image }}">
+
+  {{ if .IsHome }}
+  {{ $ld := dict
+    "@context" "https://schema.org"
+    "@type" "LocalBusiness"
+    "name" "Baumschrat"
+    "image" $image
+    "url" .Site.BaseURL
+    "telephone" .Site.Params.phone
+    "email" .Site.Params.email
+    "address" (printf "%s, Österreich" .Site.Params.address)
+    "areaServed" (slice "Graz" "Graz-Umgebung" "Mürztal")
+    "priceRange" "€€"
+  }}
+  <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+  {{ end }}
+
   <link rel="stylesheet" href="{{ "css/theme.css" | relURL }}" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
