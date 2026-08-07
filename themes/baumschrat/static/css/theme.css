@@ -43,6 +43,30 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+/* Ratgeber article body: titelbild fixed size, floated top-left, text flows around it */
+.ratgeber-content {
+  display: flow-root;
+}
+
+.ratgeber-content img:first-of-type {
+  float: left;
+  width: 288px;
+  height: 224px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  margin: 0.25rem 1.5rem 1rem 0;
+}
+
+@media (max-width: 640px) {
+  .ratgeber-content img:first-of-type {
+    float: none;
+    width: 100%;
+    height: 220px;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
 .content-page {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;

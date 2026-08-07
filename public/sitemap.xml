@@ -2,20 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/leistungen/baumschnitt/</loc>
+    <loc>https://www.baumschrat.at/leistungen/baumschnitt/</loc>
   </url><url>
-    <loc>http://localhost:1313/leistungen/spezialfaellungen/</loc>
+    <loc>https://www.baumschrat.at/leistungen/spezialfaellungen/</loc>
   </url><url>
-    <loc>http://localhost:1313/leistungen/abtragungen/</loc>
+    <loc>https://www.baumschrat.at/leistungen/abtragungen/</loc>
   </url><url>
-    <loc>http://localhost:1313/leistungen/drohneninspektion/</loc>
+    <loc>https://www.baumschrat.at/leistungen/drohneninspektion/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.baumschrat.at/ratgeber/baumabtragung-beengte-verhaeltnisse/</loc>
+    <lastmod>2026-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/datenschutz/</loc>
+    <loc>https://www.baumschrat.at/</loc>
+    <lastmod>2026-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/galerie/</loc>
+    <loc>https://www.baumschrat.at/ratgeber/</loc>
+    <lastmod>2026-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/leistungen/</loc>
+    <loc>https://www.baumschrat.at/ratgeber/beste-zeit-fuer-baumschnitt/</loc>
+    <lastmod>2026-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.baumschrat.at/ratgeber/trockenstress-baeume-erkennen/</loc>
+    <lastmod>2026-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.baumschrat.at/ratgeber/drohneninspektion-moderne-baumkontrolle/</loc>
+    <lastmod>2026-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.baumschrat.at/ratgeber/baumschutzverordnung-graz-baum-faellen/</loc>
+    <lastmod>2026-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.baumschrat.at/ratgeber/verkehrssicherungspflicht-baeume-haftung/</loc>
+    <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.baumschrat.at/ratgeber/sturmschaeden-borkenkaefer-2026/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.baumschrat.at/ratgeber/kastanienminiermotte-graz/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.baumschrat.at/datenschutz/</loc>
+  </url><url>
+    <loc>https://www.baumschrat.at/galerie/</loc>
+  </url><url>
+    <loc>https://www.baumschrat.at/leistungen/</loc>
   </url>
 </urlset>

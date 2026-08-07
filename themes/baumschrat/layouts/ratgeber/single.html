@@ -1,0 +1,27 @@
+{{ define "title" }}{{ .Title }} – Baumschrat{{ end }}
+{{ define "main" }}
+  {{ partial "nav.html" . }}
+  <div class="pt-16">
+    <div class="py-20 bg-emerald-50 min-h-screen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <a href="{{ "ratgeber/" | relURL }}" class="inline-flex items-center text-emerald-700 hover:text-emerald-900 mb-8 text-sm font-medium">
+          <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Alle Ratgeber-Artikel
+        </a>
+
+        <div class="bg-white rounded-xl shadow-sm border border-emerald-100 p-10">
+          <p class="text-sm text-emerald-700 font-medium mb-2">{{ .Date.Format "02.01.2006" }}</p>
+          <h1 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">{{ .Title }}</h1>
+          <div class="ratgeber-content prose prose-emerald max-w-none text-gray-700 text-lg leading-relaxed">
+            {{ .Content }}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  {{ partial "footer.html" . }}
+{{ end }}
