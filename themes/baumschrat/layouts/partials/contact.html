@@ -10,7 +10,7 @@
       <!-- Contact form -->
       <div class="border border-emerald-200 bg-white rounded-lg p-8 shadow-sm">
         <h3 class="text-2xl text-emerald-900 font-semibold mb-6">Angebot anfordern</h3>
-        <p class="text-emerald-700 mb-6">Beschreiben Sie Ihr Projekt und ich melde mich schnellstmöglich bei Ihnen.</p>
+        <p class="text-sm text-emerald-700 mb-6">Beschreiben Sie Ihr Projekt und ich melde mich schnellstmöglich bei Ihnen.</p>
 
         <form id="contact-form" class="space-y-4">
           <div class="grid sm:grid-cols-2 gap-4">
@@ -96,6 +96,31 @@
                 <p class="text-emerald-700">{{ .Site.Params.city }}</p>
               </div>
             </div>
+
+            <!-- Service area (moved from its own box into Kontaktinformationen) -->
+            <div>
+              <p class="font-semibold text-emerald-900 mb-2">Einsatzgebiet</p>
+              <div class="space-y-2 text-emerald-700">
+                <div class="flex items-center">
+                  <svg class="h-4 w-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Graz Stadtgebiet
+                </div>
+                <div class="flex items-center">
+                  <svg class="h-4 w-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Graz-Umgebung
+                </div>
+                <div class="flex items-center">
+                  <svg class="h-4 w-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Mürztal
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -108,31 +133,6 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             Antwort innerhalb von 24 Stunden
-          </div>
-        </div>
-
-        <!-- Service area box -->
-        <div class="border border-emerald-200 bg-white rounded-lg p-6 shadow-sm">
-          <h4 class="text-xl font-semibold text-emerald-900 mb-4">Einsatzgebiet</h4>
-          <div class="space-y-2 text-emerald-700">
-            <div class="flex items-center">
-              <svg class="h-4 w-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              Graz Stadtgebiet
-            </div>
-            <div class="flex items-center">
-              <svg class="h-4 w-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              Graz-Umgebung
-            </div>
-            <div class="flex items-center">
-              <svg class="h-4 w-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              Mürztal
-            </div>
           </div>
         </div>
       </div>

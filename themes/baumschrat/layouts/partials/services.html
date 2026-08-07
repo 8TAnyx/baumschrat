@@ -1,4 +1,5 @@
 {{ with site.GetPage "/leistungen" }}
+{{ $leistungen := . }}
 <section id="services" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
@@ -26,7 +27,7 @@
     <div class="mt-12 text-center">
       <div class="bg-emerald-50 rounded-lg p-6 max-w-4xl mx-auto border border-emerald-100">
         <h3 class="text-xl font-semibold text-emerald-900 mb-3">{{ . }}</h3>
-        <p class="text-emerald-800">{{ $.Params.network_text }}</p>
+        <p class="text-emerald-800">{{ $leistungen.Params.network_text }}</p>
       </div>
     </div>
     {{ end }}

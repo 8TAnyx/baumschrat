@@ -1,95 +1,54 @@
+{{ with site.GetPage "/about" }}
 <section id="about" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-      <!-- Left column -->
+      <!-- Left column: text + badges -->
       <div>
-        <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Über Baumschrat</h2>
-        <p class="text-lg text-gray-600 mb-6">Als Einmann-Betrieb stehe ich persönlich für Qualität, Zuverlässigkeit und fachgerechte Ausführung aller Arbeiten. Durch meine Ausbildung und die enge Vernetzung mit erfahrenen Kollegen kann ich Ihnen professionelle Lösungen für alle Ihre Baumarbeiten anbieten.</p>
-        <p class="text-lg text-gray-600 mb-8">Mein Einsatzgebiet umfasst das gesamte Grazer Stadtgebiet, die Graz-Umgebung und reicht bis ins Mürztal. Dabei lege ich besonderen Wert auf Sicherheit, Umweltschutz und Kundenzufriedenheit.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">{{ .Title }}</h2>
+        {{ range .Params.intro }}
+        <p class="text-lg text-gray-600 mb-6">{{ . }}</p>
+        {{ end }}
 
         <!-- Feature badges -->
-        <div class="grid sm:grid-cols-3 gap-6 mb-8">
+        <div class="grid sm:grid-cols-3 gap-6">
+          {{ range .Params.badges }}
           <div class="text-center">
-            <svg class="h-12 w-12 text-emerald-700 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-            </svg>
-            <p class="font-semibold text-emerald-900">Sicherheit</p>
-            <p class="text-sm text-gray-600">Höchste Sicherheitsstandards</p>
+            {{ partial "icons/service.html" (dict "icon" .icon "class" "h-12 w-12 text-emerald-700 mx-auto mb-3") }}
+            <p class="font-semibold text-emerald-900">{{ .title }}</p>
+            <p class="text-sm text-gray-600">{{ .text }}</p>
           </div>
-          <div class="text-center">
-            <svg class="h-12 w-12 text-emerald-700 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-            </svg>
-            <p class="font-semibold text-emerald-900">Vernetzt</p>
-            <p class="text-sm text-gray-600">Starkes Partnernetzwerk</p>
-          </div>
-          <div class="text-center">
-            <svg class="h-12 w-12 text-emerald-700 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <p class="font-semibold text-emerald-900">Zuverlässig</p>
-            <p class="text-sm text-gray-600">Pünktlich und verlässlich</p>
-          </div>
-        </div>
-
-        <!-- Work images -->
-        <div class="space-y-6">
-          <img src="/images/work-8.jpg" alt="Baumschrat bei professionellen Baumarbeiten" class="w-full h-64 object-cover rounded-lg shadow-lg">
-          <img src="/images/work-9.jpg" alt="Professionelle Baumarbeiten in der Steiermark" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          {{ end }}
         </div>
       </div>
 
-      <!-- Right column: Warum Baumschrat -->
-      <div>
-        <div class="bg-emerald-50 rounded-lg shadow-lg p-8 border border-emerald-100">
-          <h3 class="text-2xl font-bold text-emerald-900 mb-6 text-center">Warum Baumschrat wählen?</h3>
-          <div class="grid md:grid-cols-2 gap-6">
-
-            <div class="flex items-start">
-              <svg class="h-6 w-6 text-emerald-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              <div>
-                <p class="font-semibold text-emerald-900">Persönlicher Service</p>
-                <p class="text-emerald-700">Direkter Kontakt zum Ausführenden</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <svg class="h-6 w-6 text-emerald-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              <div>
-                <p class="font-semibold text-emerald-900">Kostenlose Beratung</p>
-                <p class="text-emerald-700">Unverbindliche Besichtigung und Angebot</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <svg class="h-6 w-6 text-emerald-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              <div>
-                <p class="font-semibold text-emerald-900">Regionale Nähe</p>
-                <p class="text-emerald-700">Kurze Anfahrtswege, schnelle Reaktion</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <svg class="h-6 w-6 text-emerald-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              <div>
-                <p class="font-semibold text-emerald-900">Faire Preise</p>
-                <p class="text-emerald-700">Transparente Kostenaufstellung</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
+      <!-- Right column: images -->
+      <div class="space-y-6">
+        {{ range .Params.images }}
+        <img src="{{ .src }}" alt="{{ .alt }}" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        {{ end }}
       </div>
 
     </div>
+
+    <!-- Warum Baumschrat: full width, below text/icons/images -->
+    <div class="mt-16">
+      <div class="bg-emerald-50 rounded-lg shadow-lg p-8 border border-emerald-100">
+        <h3 class="text-2xl font-bold text-emerald-900 mb-6 text-center">{{ .Params.why_title }}</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          {{ range .Params.why_items }}
+          <div class="flex items-start">
+            {{ partial "icons/service.html" (dict "icon" "check-circle" "class" "h-6 w-6 text-emerald-700 mr-3 mt-1 flex-shrink-0") }}
+            <div>
+              <p class="font-semibold text-emerald-900">{{ .title }}</p>
+              <p class="text-emerald-700">{{ .text }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+{{ end }}

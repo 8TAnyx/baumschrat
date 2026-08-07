@@ -1,0 +1,69 @@
+:root {
+  --color-emerald-50: #eaf4cf;
+  --color-emerald-100: #d8e6b2;
+  --color-emerald-200: #c7d69b;
+  --color-emerald-400: #96a85e;
+  --color-emerald-500: #798940;
+  --color-emerald-700: #414e00;
+  --color-emerald-800: #293300;
+  --color-emerald-900: #131900;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#dsgvo-legal-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(6, 78, 59, 0.9);
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  z-index: 999999;
+}
+
+#dsgvo-legal-bar a {
+  color: #a7f3d0;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+#home {
+  background-image: url('/images/hero-background.jpg');
+}
+
+.content-page {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #1a2e18;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9f8;
+}
+
+.content-page-inner {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.content-page h1,
+.content-page h2 {
+  color: #064e3b;
+}
+
+.content-page a {
+  color: #059669;
+  font-weight: bold;
+}
+
+.content-page .back-link {
+  margin-top: 40px;
+}

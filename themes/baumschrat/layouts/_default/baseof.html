@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ block "description" . }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="/css/theme.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -13,45 +14,20 @@
         extend: {
           colors: {
             emerald: {
-              50:  '#ecfdf5',
-              100: '#d1fae5',
-              200: '#a7f3d0',
-              400: '#34d399',
-              500: '#10b981',
-              700: '#047857',
-              800: '#065f46',
-              900: '#064e3b',
-            },
-            orange: {
-              500: '#f97316',
-              600: '#ea6c0a',
+              50:  'var(--color-emerald-50)',
+              100: 'var(--color-emerald-100)',
+              200: 'var(--color-emerald-200)',
+              400: 'var(--color-emerald-400)',
+              500: 'var(--color-emerald-500)',
+              700: 'var(--color-emerald-700)',
+              800: 'var(--color-emerald-800)',
+              900: 'var(--color-emerald-900)',
             }
           }
         }
       }
     }
   </script>
-  <style>
-    #dsgvo-legal-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(6, 78, 59, 0.9);
-      color: #ffffff;
-      text-align: center;
-      padding: 8px 0;
-      font-family: sans-serif;
-      font-size: 12px;
-      z-index: 999999;
-    }
-    #dsgvo-legal-bar a {
-      color: #a7f3d0;
-      text-decoration: underline;
-      margin-left: 5px;
-    }
-    html { scroll-behavior: smooth; }
-  </style>
   {{ block "head" . }}{{ end }}
 </head>
 <body class="min-h-screen bg-white">
