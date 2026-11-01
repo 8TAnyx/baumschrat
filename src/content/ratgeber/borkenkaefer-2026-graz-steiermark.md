@@ -32,7 +32,7 @@ Eine eigene Schadholzzahl nur für das Grazer Stadtgebiet wird nicht veröffentl
 
 - **Jetzt im Herbst kontrollieren:** Rotbraune Kronen, abfallende Rinde und Spechtabschläge zeigen Bäume, die in diesem Jahr befallen wurden. Wie Sie einen Befall erkennen, lesen Sie in [Borkenkäferbefall erkennen](/ratgeber/borkenkaeferbefall-erkennen/).
 - **Befallene Bäume über den Winter entfernen:** Der Landesforstdirektor rät, befallenes Holz möglichst rasch zu entfernen, damit die Käferpopulation vor dem Frühjahr reduziert wird. Im Holz und in der Rinde überwintern die Käfer – und fliegen im Frühjahr zu den gesunden Nachbarbäumen.
-- **In Graz an die Anzeige denken:** Auch ein abgestorbener Baum bleibt nach der Grazer Baumschutzverordnung geschützt, wenn er groß genug ist. Warum die Meldung sich lohnt, steht in [Borkenkäfer-Baum fällen in Graz](/ratgeber/borkenkaefer-meldung-ersatzpflanzung-graz/).
+- **In Graz die Zuständigkeit klären:** Bei Buchdrucker-Befall an Fichten ist die Forstbehörde zuständig. Ordnet sie die Entfernung an, ist keine Ersatzpflanzung nötig – sonst gilt die Grazer Baumschutzverordnung. Mehr dazu in [Borkenkäfer-Baum fällen in Graz](/ratgeber/borkenkaefer-meldung-ersatzpflanzung-graz/).
 - **Langfristig umdenken:** Laut Landesforstdirektion bestehen bereits rund 30 Prozent der steirischen Wälder aus Laubmischbeständen, die Trockenheit besser vertragen. Auch im Garten ist bei einer Nachpflanzung ein trockenheitsverträglicher Laubbaum oft die bessere Wahl als die nächste Fichte.
 
 ## Gute Nachricht zum Schluss
