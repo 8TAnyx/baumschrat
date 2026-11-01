@@ -16,7 +16,7 @@ Graz ist mein Heimatrevier – mein Betrieb sitzt in der Stadt, die Wege zu Ihne
 
 **Die Baumschutzverordnung.** In Graz sind Bäume ab 50 cm Stammumfang (gemessen in 1 m Höhe) geschützt – auch auf privatem Grund. Fällungen, Kappungen und Grabungen im Wurzelbereich müssen vorher bei der Abteilung für Grünraum und Gewässer angezeigt werden. Ich messe, dokumentiere und unterstütze Sie bei der Anzeige. Details im Ratgeber [Baum fällen in Graz](/ratgeber/baumschutzverordnung-graz-baum-faellen/).
 
-**Wenig Platz.** In den inneren Bezirken stehen große Bäume oft in Innenhöfen, zwischen Altbauten oder über Garagen. Mit [Seilklettertechnik](/leistungen/spezialfaellungen/) und [Abtragung in Teilstücken](/leistungen/abtragungen/) komme ich auch dorthin, wo keine Hubarbeitsbühne Platz hat.
+**Wenig Platz.** In den inneren Bezirken stehen große Bäume oft in Innenhöfen, zwischen Altbauten oder über Garagen. Mit [Seilklettertechnik und Abtragung in Teilstücken](/leistungen/baumfaellung/) komme ich auch dorthin, wo keine Hubarbeitsbühne Platz hat.
 
 **Hanglagen und Waldrand.** In Andritz, Mariatrost, Ries, Gösting oder am Plabutsch grenzen viele Gärten an Wald. Hier spielen Fichten, Borkenkäfer und Sturmschäden eine größere Rolle als im Zentrum – siehe [Borkenkäfer-Hilfe](/leistungen/borkenkaefer/).
 

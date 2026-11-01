@@ -1,5 +1,6 @@
 ---
 title: "Baumkontrolle nach ÖNORM L 1122"
+gruppe: "pruefen"
 kurz: "Baumkontrolle"
 seoTitle: "Baumkontrolle Graz nach ÖNORM L 1122 | Baumschrat"
 description: "Baumkontrolle in Graz nach ÖNORM L 1122: dokumentierte Sichtkontrolle zur Verkehrssicherheit für Private, Hausverwaltungen und Gemeinden – mit Maßnahmenempfehlung."

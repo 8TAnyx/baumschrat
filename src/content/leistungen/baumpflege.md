@@ -1,5 +1,6 @@
 ---
 title: "Baumpflege nach ÖNORM L 1122"
+gruppe: "pflegen"
 kurz: "Baumpflege"
 seoTitle: "Baumpflege Graz nach ÖNORM L 1122 | Baumschrat"
 description: "Fachgerechte Baumpflege in Graz nach ÖNORM L 1122: Kronenpflege, Totholzentfernung, Lichtraumprofil, Kroneneinkürzung und Jungbaumerziehung – mit Seilklettertechnik."

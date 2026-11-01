@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
-import ServiceCard from '../components/ServiceCard.astro';
+import ServiceGroups from '../components/ServiceGroups.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
@@ -14,7 +14,6 @@ import heroImg from '../assets/fotos/work-1.jpg';
 import about1 from '../assets/fotos/work-9.jpg';
 import about2 from '../assets/fotos/work-7.jpg';
 
-const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
 const regionen = (await getCollection('regionen')).sort((a, b) => a.data.order - b.data.order);
 const artikel = (await getCollection('ratgeber', (p) => !p.data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -85,8 +84,8 @@ const schritte = [
           Von der Pflege über die Kontrolle bis zur Fällung. Was ich nicht selbst mache, deckt mein Netzwerk aus erfahrenen Partnerbetrieben ab.
         </p>
       </div>
-      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {leistungen.map((s) => <ServiceCard service={s} />)}
+      <div class="mt-10">
+        <ServiceGroups />
       </div>
     </div>
   </section>
