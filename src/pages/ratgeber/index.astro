@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { breadcrumbLd } from '../../data/seo';
+import img from '../../assets/fotos/work-8.jpg';
+
+const artikel = (await getCollection('ratgeber', (p) => !p.data.draft)).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const themen = [...new Set(artikel.map((a) => a.data.thema))];
+const crumbs = [
+  { label: 'Start', href: '/' },
+  { label: 'Ratgeber', href: '/ratgeber/' },
+];
+---
+
+<Base
+  title="Ratgeber: Baumpflege, Borkenkäfer & Baumschutz in Graz | Baumschrat"
+  description="Praxiswissen vom Baumpfleger: Borkenkäfer erkennen, Grazer Baumschutzverordnung, Baumkontrolle und Haftung, Baumschnitt und Sturmschäden – verständlich erklärt."
+  image={img}
+  jsonLd={breadcrumbLd(crumbs, Astro.site!)}
+>
+  <PageHero
+    title="Ratgeber"
+    lead="Tipps und Hintergrundwissen rund um Baumpflege, Baumsicherheit und Baumschutz in Graz und der Steiermark."
+    eyebrow="Wissen vom Baumpfleger"
+    crumbs={crumbs}
+    image={img}
+    imageAlt=""
+  />
+  <section class="py-14 md:py-20">
+    <div class="container-page">
+      <div class="flex flex-wrap gap-2" id="themen" role="group" aria-label="Nach Thema filtern">
+        <button type="button" data-thema="" class="thema-btn rounded-full border border-wald-200 px-4 py-1.5 text-sm font-medium aria-pressed:bg-wald-700 aria-pressed:text-white" aria-pressed="true">Alle</button>
+        {
+          themen.map((t) => (
+            <button type="button" data-thema={t} class="thema-btn rounded-full border border-wald-200 px-4 py-1.5 text-sm font-medium aria-pressed:bg-wald-700 aria-pressed:text-white" aria-pressed="false">
+              {t}
+            </button>
+          ))
+        }
+      </div>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          artikel.map((p) => (
+            <div data-thema={p.data.thema} class="artikel">
+              <ArticleCard post={p} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.thema-btn');
+  const items = document.querySelectorAll<HTMLElement>('.artikel');
+  buttons.forEach((btn) =>
+    btn.addEventListener('click', () => {
+      const thema = btn.dataset.thema;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      items.forEach((el) => (el.hidden = !!thema && el.dataset.thema !== thema));
+    }),
+  );
+</script>

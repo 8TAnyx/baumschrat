@@ -1,10 +1,11 @@
-name: Build and deploy Hugo site via FTP
+name: Build and deploy Astro site via FTP
 
 on:
   push:
     branches:
       - main
       - test
+      - relaunch-astro
 
 concurrency:
   group: deploy-${{ github.ref }}
@@ -17,23 +18,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          hugo-version: '0.161.1'
-          extended: true
+          node-version: 22
+          cache: npm
 
+      - name: Install dependencies
+        run: npm ci
+
+      # Alles außer main ist Testumgebung: läuft unter /test/ und wird von Suchmaschinen ausgeschlossen
       - name: Build site
-        run: |
-          if [ "${{ github.ref_name }}" = "test" ]; then
-            hugo --minify --baseURL "/test/"
-          else
-            hugo --minify
-          fi
+        run: npm run build
+        env:
+          SITE_BASE: ${{ github.ref == 'refs/heads/main' && '/' || '/test' }}
+          PUBLIC_NOINDEX: ${{ github.ref == 'refs/heads/main' && 'false' || 'true' }}
 
       - name: Deploy to production (main)
         if: github.ref == 'refs/heads/main'
@@ -42,15 +42,15 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public/
+          local-dir: ./dist/
           server-dir: ${{ secrets.FTP_MAIN_DIR }}
 
-      - name: Deploy to test
-        if: github.ref == 'refs/heads/test'
+      - name: Deploy to test (test, relaunch-astro)
+        if: github.ref != 'refs/heads/main'
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public/
+          local-dir: ./dist/
           server-dir: ${{ secrets.FTP_TEST_DIR }}

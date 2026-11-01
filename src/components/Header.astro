@@ -1,0 +1,108 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Icon from './Icon.astro';
+import logo from '../assets/site/logo.png';
+import { nav, site, u } from '../data/site';
+
+const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
+const path = Astro.url.pathname;
+const isActive = (href: string) => path.startsWith(u(href));
+---
+
+<header class="sticky top-0 z-50 border-b border-wald-100 bg-papier/95 backdrop-blur">
+  <div class="container-page flex h-16 items-center justify-between gap-4 md:h-20">
+    <a href={u('/')} class="flex items-center gap-2.5" aria-label="Baumschrat – zur Startseite">
+      <Image src={logo} alt="" width={48} height={59} class="h-10 w-auto md:h-12" loading="eager" />
+      <span class="font-display text-xl font-semibold text-wald-900 md:text-2xl">Baumschrat</span>
+    </a>
+
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Hauptnavigation">
+      <div class="group relative">
+        <a
+          href={u('/leistungen/')}
+          class:list={['inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium hover:text-wald-700', isActive('/leistungen/') ? 'text-wald-700' : 'text-tinte']}
+        >
+          Leistungen <Icon name="chevron-down" class="h-4 w-4" />
+        </a>
+        <div class="invisible absolute left-0 top-full w-72 pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+          <ul class="card p-2">
+            {
+              leistungen.map((l) => (
+                <li>
+                  <a href={u(`/leistungen/${l.id}/`)} class="flex items-center gap-3 rounded-xl px-3 py-2 text-sm hover:bg-wald-50">
+                    <Icon name={l.data.icon} class="h-5 w-5 text-wald-600" />
+                    {l.data.kurz}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+      {
+        nav.slice(1).map((item) => (
+          <a
+            href={u(item.href)}
+            class:list={['rounded-full px-3 py-2 text-sm font-medium hover:text-wald-700', isActive(item.href) ? 'text-wald-700' : 'text-tinte']}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href={site.phoneHref} class="hidden items-center gap-2 text-sm font-semibold text-wald-800 hover:text-rinde-600 xl:inline-flex">
+        <Icon name="phone" class="h-4 w-4" />
+        {site.phone}
+      </a>
+      <a href={u('/kontakt/')} class="btn-primary hidden !px-5 !py-2.5 text-sm sm:inline-flex">Angebot anfordern</a>
+      <button
+        id="menu-btn"
+        type="button"
+        class="rounded-full p-2 text-wald-900 hover:bg-wald-50 lg:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Menü öffnen"
+      >
+        <Icon name="menu" class="h-7 w-7" />
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden border-t border-wald-100 bg-papier lg:hidden">
+    <nav class="container-page grid gap-1 py-4" aria-label="Mobile Navigation">
+      <p class="eyebrow px-3 pt-1">Leistungen</p>
+      <div class="grid grid-cols-1 gap-1 sm:grid-cols-2">
+        {
+          leistungen.map((l) => (
+            <a href={u(`/leistungen/${l.id}/`)} class="flex items-center gap-3 rounded-xl px-3 py-2.5 hover:bg-wald-50">
+              <Icon name={l.data.icon} class="h-5 w-5 text-wald-600" />
+              {l.data.kurz}
+            </a>
+          ))
+        }
+      </div>
+      <hr class="my-2 border-wald-100" />
+      {
+        nav.slice(1).map((item) => (
+          <a href={u(item.href)} class="rounded-xl px-3 py-2.5 font-medium hover:bg-wald-50">
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    const open = menu?.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+  });
+</script>

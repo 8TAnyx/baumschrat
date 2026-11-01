@@ -1,81 +1,36 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Guidance for Claude Code when working in this repository.
 
-## Project Overview
+## Project
 
-Hugo static site for Baumschrat, a professional tree services company (Daniel Lindner) in Graz, Austria. Converted from a React/Vite SPA at `../www/`. Custom theme named `baumschrat`.
+Website for Baumschrat, a one-person tree care business (Daniel Lindner) in Graz, Austria. German-language (de-AT) content. Static site built with Astro 7 + Tailwind CSS 4, deployed via FTP to a PHP-capable host. Replaces an earlier Hugo version and a React/Vite prototype.
 
-**Tech stack:** Hugo v0.161.1+, Tailwind CSS v3 via CDN, vanilla JS for gallery carousel and contact form.
-
-## Common Commands
+## Commands
 
 ```bash
-# Development server (live reload)
-hugo server --port 1314
-
-# Production build (outputs to public/)
-hugo build
-
-# Build with drafts
-hugo server --buildDrafts
+npm run dev        # dev server, port 4321
+npm run build      # static build to dist/
+npm run check      # astro check (types)
+SITE_BASE=/test npm run build   # build as served on the test environment
 ```
+
+Astro is pinned to 7.4.0 because newer 7.4.x requires Node >= 22.23.4 and the local machine has 22.23.3.
 
 ## Architecture
 
-### Theme: `themes/baumschrat/`
-Single-page layout — `layouts/index.html` composes all section partials in order:
-`nav → hero → services → gallery → about → contact → footer`
+- `src/content.config.ts` – three collections: `leistungen` (services), `ratgeber` (blog), `regionen` (service-area pages). Schemas are strict; build fails on missing fields.
+- `src/data/site.ts` – company data, nav, and `u()` helper. **Every internal link must go through `u()`** so it works under the `/test/` base path. Markdown links are rewritten by `src/lib/rehype-base-links.mjs` (requires `@astrojs/markdown-remark`, since Astro 7's default Markdown processor doesn't run rehype plugins).
+- `src/layouts/Base.astro` – head/SEO, LocalBusiness JSON-LD on every page, header, footer, mobile action bar. Pages pass extra JSON-LD (Service, BlogPosting, FAQPage, BreadcrumbList) via `jsonLd`.
+- `src/components/ContactForm.astro` – multipart POST with photo upload; photos are downscaled client-side to 1800px before upload. Backend: `public/send_email.php` (honeypot, min fill time, per-IP rate limit, header-injection safe, MIME attachments).
+- Images live in `src/assets/` and are optimised by `astro:assets`. Always pass `width` (and `height` + `fit="cover"` for cropped hero images) together with `widths`, otherwise the src fallback is the full-size original.
+- Tailwind 4 theme tokens (`wald`, `moos`, `rinde`, `papier`, `tinte`) and custom utilities (`btn-*`, `card`, `eyebrow`, `container-page`, `prose-baum`) are in `src/styles/global.css`. Custom classes must be `@utility`, not `@layer components`, to be usable with `@apply`.
 
-All sections are in `themes/baumschrat/layouts/partials/`. Each partial is self-contained (HTML + inline `<script>` if needed).
+## Environments
 
-### Content & Data
-- `content/_index.md` — home page (front matter only; display content lives in partials)
-- `content/datenschutz.md` — privacy policy (rendered by `_default/single.html`)
-- `content/leistungen/` — **extensible services section** (see below)
-- `content/galerie/` — **extensible gallery** (see below)
+`PUBLIC_NOINDEX=true` adds `noindex` and a disallow-all robots.txt. CI sets it and `SITE_BASE=/test` for every branch except `main`.
 
-Site-wide params (phone, email, city, address, WKO URL) live in `hugo.toml [params]`.
+## Content rules
 
-### Adding a New Service
-Create a markdown file in `content/leistungen/`:
-
-```markdown
----
-title: "Neue Leistung"
-weight: 40          # controls display order (lower = first)
-params:
-  icon: "shield"    # see icons/service.html for available names
----
-
-Beschreibung der Leistung in ein bis zwei Sätzen.
-```
-
-Available icons: `scissors`, `layers`, `pruning`, `shield`, `tree`, `truck`. To add a new icon, add a branch to `themes/baumschrat/layouts/partials/icons/service.html`.
-
-The section heading, subtitle, and network box text come from `content/leistungen/_index.md` params — edit there to change those texts without touching templates.
-
-### Adding a Gallery Image
-`content/galerie/` is a Hugo leaf bundle. Drop any `.jpg` into that directory and it appears in the carousel automatically (sorted last). To set alt text and display order, add a `resources` entry in `content/galerie/index.md`:
-
-```yaml
-resources:
-  - src: "new-photo.jpg"
-    title: "Beschreibung für Alt-Text"
-    params:
-      weight: 8    # display position; images without weight sort by filename
-```
-
-Hugo generates two optimised variants at build time: a 1200×600 crop for the carousel and a 128×128 crop for thumbnails. The standalone gallery page at `/galerie/` shows a 600×600 grid. Title and subtitle text come from `content/galerie/index.md` params.
-
-### Contact Form
-`partials/contact.html` POSTs JSON to `/send_email.php` (copied to `static/`). Fields: `firstName`, `lastName`, `email`, `phone`, `location`, `message`. Success/error state is handled inline without page reload.
-
-### Images
-- `static/images/logo.png` — inverted white in hero, normal color in nav/footer
-- `static/images/hero-background.jpg` — full-screen hero background
-- `static/images/work-8.jpg`, `work-9.jpg` — about section stacked images (not in gallery)
-- `content/galerie/*.jpg` — gallery images (processed by Hugo at build time)
-
-## Deployment
-The `public/` output directory is the deployable artifact. Copy `public/` contents alongside `static/send_email.php` (already included via `static/`) to a PHP-capable web server.
+- Legal statements (Grazer Baumschutzverordnung, Stmk. Baumschutzgesetz) must match the source texts on ris.bka.gv.at; cite sources at the end of Ratgeber articles.
+- Don't invent business facts (certifications, insurance, years of experience) – ask the owner.

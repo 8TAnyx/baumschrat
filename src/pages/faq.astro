@@ -1,0 +1,44 @@
+---
+import { u } from '../data/site';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { faqAllgemein } from '../data/faq';
+import { breadcrumbLd, faqLd } from '../data/seo';
+
+const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order).filter((l) => l.data.faq.length);
+const crumbs = [
+  { label: 'Start', href: '/' },
+  { label: 'Häufige Fragen', href: '/faq/' },
+];
+const alle = [...faqAllgemein, ...leistungen.flatMap((l) => l.data.faq)];
+---
+
+<Base
+  title="Häufige Fragen zu Baumpflege & Baumfällung in Graz | Baumschrat"
+  description="Antworten auf häufige Fragen: Kosten, Genehmigung nach Grazer Baumschutzverordnung, ÖNORM L 1122, Borkenkäfer, Drohnen-Baumprüfung und Ablauf."
+  jsonLd={[faqLd(alle), breadcrumbLd(crumbs, Astro.site!)]}
+>
+  <PageHero title="Häufige Fragen" lead="Kosten, Genehmigungen, Ablauf – die wichtigsten Antworten auf einen Blick." eyebrow="FAQ" crumbs={crumbs} />
+  <section class="py-14 md:py-20">
+    <div class="container-page max-w-3xl space-y-12">
+      <div>
+        <h2 class="text-2xl">Allgemein</h2>
+        <div class="mt-5"><Faq items={faqAllgemein} /></div>
+      </div>
+      {
+        leistungen.map((l) => (
+          <div>
+            <h2 class="text-2xl">
+              <a href={u(`/leistungen/${l.id}/`)} class="hover:text-wald-700">{l.data.kurz}</a>
+            </h2>
+            <div class="mt-5"><Faq items={l.data.faq} /></div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+  <CtaBand />
+</Base>

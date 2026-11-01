@@ -1,0 +1,22 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  items: { frage: string; antwort: string }[];
+}
+const { items } = Astro.props;
+---
+
+<div class="divide-y divide-wald-100 overflow-hidden rounded-2xl border border-wald-100 bg-white">
+  {
+    items.map((f) => (
+      <details class="group">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold text-wald-900 hover:bg-wald-50 [&::-webkit-details-marker]:hidden">
+          {f.frage}
+          <Icon name="chevron-down" class="h-5 w-5 shrink-0 text-wald-600 transition group-open:rotate-180" />
+        </summary>
+        <p class="px-5 pb-5 leading-relaxed text-tinte/80">{f.antwort}</p>
+      </details>
+    ))
+  }
+</div>

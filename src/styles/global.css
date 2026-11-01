@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/fraunces';
+
+@theme {
+  --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+
+  /* Waldgrün aus dem Logo */
+  --color-wald-50: #eef5f1;
+  --color-wald-100: #d5e8de;
+  --color-wald-200: #a9d0bd;
+  --color-wald-300: #74b196;
+  --color-wald-500: #2f7a5f;
+  --color-wald-600: #1d6249;
+  --color-wald-700: #134f3c;
+  --color-wald-800: #0f3f31;
+  --color-wald-900: #0b2e24;
+  --color-wald-950: #061b15;
+
+  /* Moos – Akzent aus der bisherigen Website */
+  --color-moos-100: #eaf0d2;
+  --color-moos-400: #96a85e;
+  --color-moos-600: #66762f;
+
+  /* Rinde / warmer Handlungsakzent */
+  --color-rinde-500: #d9622b;
+  --color-rinde-600: #bf4f1c;
+  --color-rinde-700: #9c3f16;
+
+  --color-papier: #f7f5ef;
+  --color-tinte: #1b2420;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-papier font-sans text-tinte antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-wald-900;
+    font-optical-sizing: auto;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-rinde-500);
+    outline-offset: 2px;
+  }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-semibold transition-colors;
+}
+@utility btn-primary {
+  @apply btn bg-rinde-600 text-white hover:bg-rinde-700;
+}
+@utility btn-secondary {
+  @apply btn bg-wald-700 text-white hover:bg-wald-800;
+}
+@utility btn-ghost {
+  @apply btn border border-white/60 text-white hover:bg-white/10;
+}
+@utility eyebrow {
+  @apply text-sm font-semibold uppercase tracking-widest text-moos-600;
+}
+@utility card {
+  @apply rounded-2xl border border-wald-100 bg-white shadow-sm;
+}
+@utility prose-baum {
+  @apply prose prose-lg max-w-none
+    prose-headings:font-display prose-headings:text-wald-900
+    prose-a:text-wald-700 prose-a:underline-offset-2 hover:prose-a:text-rinde-600
+    prose-strong:text-wald-900 prose-li:marker:text-moos-600;
+}

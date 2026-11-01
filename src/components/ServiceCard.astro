@@ -1,0 +1,21 @@
+---
+import { u } from '../data/site';
+import type { CollectionEntry } from 'astro:content';
+import Icon from './Icon.astro';
+
+interface Props {
+  service: CollectionEntry<'leistungen'>;
+}
+const { service } = Astro.props;
+---
+
+<a href={u(`/leistungen/${service.id}/`)} class="card group flex flex-col p-6 transition hover:-translate-y-0.5 hover:border-wald-300 hover:shadow-md">
+  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-wald-50 text-wald-700 group-hover:bg-wald-700 group-hover:text-white">
+    <Icon name={service.data.icon} class="h-6 w-6" />
+  </span>
+  <h3 class="mt-4 text-xl">{service.data.kurz}</h3>
+  <p class="mt-2 flex-1 text-sm leading-relaxed text-tinte/75">{service.data.teaser}</p>
+  <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-wald-700 group-hover:text-rinde-600">
+    Mehr erfahren <Icon name="arrow-right" class="h-4 w-4" />
+  </span>
+</a>

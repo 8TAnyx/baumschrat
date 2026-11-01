@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { breadcrumbLd } from '../../data/seo';
+import img from '../../assets/fotos/work-4.jpg';
+
+const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
+const crumbs = [
+  { label: 'Start', href: '/' },
+  { label: 'Leistungen', href: '/leistungen/' },
+];
+---
+
+<Base
+  title="Leistungen: Baumpflege, Baumkontrolle & Fällung in Graz | Baumschrat"
+  description="Alle Leistungen von Baumschrat: Baumpflege und Baumkontrolle nach ÖNORM L 1122, Drohnen-Baumprüfung, Spezialfällungen, Abtragungen, Borkenkäfer-Hilfe und Sturmschäden."
+  image={img}
+  jsonLd={breadcrumbLd(crumbs, Astro.site!)}
+>
+  <PageHero
+    title="Leistungen rund um Ihre Bäume"
+    lead="Pflegen, prüfen, sichern oder entfernen – ich berate Sie ehrlich, was Ihr Baum wirklich braucht."
+    eyebrow="Leistungen"
+    crumbs={crumbs}
+    image={img}
+    imageAlt=""
+  />
+  <section class="py-16">
+    <div class="container-page grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {leistungen.map((s) => <ServiceCard service={s} />)}
+    </div>
+  </section>
+  <CtaBand />
+</Base>

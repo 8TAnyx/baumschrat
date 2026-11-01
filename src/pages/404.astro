@@ -1,0 +1,19 @@
+---
+import { u } from '../data/site';
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Base title="Seite nicht gefunden | Baumschrat" description="Diese Seite gibt es nicht (mehr)." noindex>
+  <section class="py-24">
+    <div class="container-page max-w-2xl text-center">
+      <Icon name="tree-deciduous" class="mx-auto h-16 w-16 text-wald-300" />
+      <h1 class="mt-6 text-4xl">Hier ist leider kein Baum mehr.</h1>
+      <p class="mt-4 text-lg text-tinte/75">Die Seite wurde nicht gefunden – vielleicht wurde sie verschoben.</p>
+      <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href={u('/')} class="btn-secondary">Zur Startseite</a>
+        <a href={u('/leistungen/')} class="btn-primary">Leistungen ansehen</a>
+      </div>
+    </div>
+  </section>
+</Base>

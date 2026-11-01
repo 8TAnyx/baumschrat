@@ -1,0 +1,42 @@
+---
+import { u } from '../../data/site';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { breadcrumbLd } from '../../data/seo';
+import img from '../../assets/fotos/work-7.jpg';
+
+const regionen = (await getCollection('regionen')).sort((a, b) => a.data.order - b.data.order);
+const crumbs = [
+  { label: 'Start', href: '/' },
+  { label: 'Einsatzgebiet', href: '/einsatzgebiet/' },
+];
+---
+
+<Base
+  title="Einsatzgebiet: Graz, Graz-Umgebung & Mürztal | Baumschrat"
+  description="Baumschrat ist in ganz Graz, in den Gemeinden von Graz-Umgebung und im Mürztal für Sie da – Baumpflege, Baumkontrolle, Fällungen und Borkenkäfer-Hilfe."
+  image={img}
+  jsonLd={breadcrumbLd(crumbs, Astro.site!)}
+>
+  <PageHero title="Mein Einsatzgebiet" lead="Graz, Graz-Umgebung und das Mürztal – kurze Wege, schnelle Reaktion." eyebrow="Einsatzgebiet" crumbs={crumbs} image={img} imageAlt="" />
+  <section class="py-14 md:py-20">
+    <div class="container-page grid gap-8">
+      {
+        regionen.map((r) => (
+          <a href={u(`/einsatzgebiet/${r.id}/`)} class="card group grid overflow-hidden md:grid-cols-[320px_1fr]">
+            <Image src={r.data.image} alt={r.data.imageAlt} widths={[400, 640]} width={640} sizes="(min-width: 768px) 320px, 100vw" class="h-56 w-full object-cover md:h-full" />
+            <div class="p-6 md:p-8">
+              <h2 class="text-2xl group-hover:text-wald-700">{r.data.title}</h2>
+              <p class="mt-2 text-tinte/75">{r.data.teaser}</p>
+              <p class="mt-4 text-sm text-tinte/60">{r.data.orte.join(' · ')}</p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+  <CtaBand />
+</Base>

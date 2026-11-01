@@ -1,0 +1,171 @@
+---
+import { u } from '../data/site';
+import { getCollection } from 'astro:content';
+import Icon from './Icon.astro';
+
+interface Props {
+  preselect?: string;
+}
+const { preselect } = Astro.props;
+const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
+const field =
+  'w-full rounded-xl border border-wald-200 bg-white px-4 py-3 text-tinte placeholder:text-tinte/40 focus:border-wald-500 focus:outline-none focus:ring-2 focus:ring-wald-200';
+const label = 'mb-1.5 block text-sm font-semibold text-wald-900';
+---
+
+<form id="contact-form" class="card space-y-5 p-6 md:p-8" novalidate>
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div>
+      <label for="cf-name" class={label}>Name *</label>
+      <input id="cf-name" name="name" required autocomplete="name" class={field} placeholder="Max Mustermann" />
+    </div>
+    <div>
+      <label for="cf-phone" class={label}>Telefon</label>
+      <input id="cf-phone" name="phone" type="tel" autocomplete="tel" class={field} placeholder="+43 …" />
+    </div>
+  </div>
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div>
+      <label for="cf-email" class={label}>E-Mail *</label>
+      <input id="cf-email" name="email" type="email" required autocomplete="email" class={field} placeholder="ihre.email@beispiel.at" />
+    </div>
+    <div>
+      <label for="cf-location" class={label}>Ort der Arbeiten</label>
+      <input id="cf-location" name="location" class={field} placeholder="z. B. Graz-Andritz" />
+    </div>
+  </div>
+  <div>
+    <label for="cf-service" class={label}>Worum geht es?</label>
+    <select id="cf-service" name="service" class={field}>
+      <option value="">Bitte wählen (optional)</option>
+      {leistungen.map((l) => <option value={l.data.kurz} data-id={l.id} selected={preselect === l.id}>{l.data.kurz}</option>)}
+      <option value="Sonstiges">Sonstiges</option>
+    </select>
+  </div>
+  <div>
+    <label for="cf-message" class={label}>Beschreibung *</label>
+    <textarea id="cf-message" name="message" rows="5" required class={field} placeholder="Baumart, ungefähre Höhe, Lage (z. B. direkt am Haus), was Ihnen aufgefallen ist …"></textarea>
+  </div>
+
+  <div>
+    <span class={label}>Fotos vom Baum (optional, bis zu 5)</span>
+    <label for="cf-photos" class="flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-wald-200 bg-wald-50/50 px-4 py-6 text-center text-sm text-wald-700 hover:border-wald-400 hover:bg-wald-50">
+      <Icon name="camera" class="h-7 w-7" />
+      <span><strong>Fotos auswählen</strong> oder direkt mit dem Handy aufnehmen</span>
+      <span class="text-xs text-tinte/60">Ganzer Baum, Stammfuß und auffällige Stellen helfen bei der Einschätzung.</span>
+    </label>
+    <input id="cf-photos" name="photos" type="file" accept="image/*" multiple class="sr-only" />
+    <ul id="cf-previews" class="mt-3 grid grid-cols-5 gap-2"></ul>
+  </div>
+
+  <!-- Spam-Schutz: für Menschen unsichtbar -->
+  <div class="hidden" aria-hidden="true">
+    <label for="cf-website">Website</label>
+    <input id="cf-website" name="website" tabindex="-1" autocomplete="off" />
+  </div>
+
+  <p class="text-xs leading-relaxed text-tinte/60">
+    Ihre Angaben und Fotos verwende ich ausschließlich zur Bearbeitung Ihrer Anfrage. Mehr dazu in der{' '}
+    <a href={u('/datenschutz/')} class="underline">Datenschutzerklärung</a>.
+  </p>
+
+  <button type="submit" id="cf-submit" class="btn-primary w-full">Anfrage senden</button>
+  <p id="cf-status" role="status" aria-live="polite" class="hidden rounded-xl px-4 py-3 text-sm"></p>
+</form>
+
+<script>
+  const MAX_FILES = 5;
+  const MAX_EDGE = 1800;
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const input = document.getElementById('cf-photos') as HTMLInputElement;
+  const previews = document.getElementById('cf-previews')!;
+  const status = document.getElementById('cf-status')!;
+  const submit = document.getElementById('cf-submit') as HTMLButtonElement;
+  const startedAt = Date.now();
+  let photos: File[] = [];
+
+  // Von einer Leistungsseite kommend (?leistung=baumpflege) die passende Option vorauswählen
+  const vorauswahl = new URLSearchParams(location.search).get('leistung');
+  const option = vorauswahl && form.querySelector<HTMLOptionElement>(`option[data-id="${CSS.escape(vorauswahl)}"]`);
+  if (option) option.selected = true;
+
+  // Handyfotos sind oft 5–10 MB. Im Browser auf max. 1800 px verkleinern, damit das Upload-Limit des Servers reicht.
+  async function shrink(file: File): Promise<File> {
+    try {
+      const bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' });
+      const scale = Math.min(1, MAX_EDGE / Math.max(bitmap.width, bitmap.height));
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(bitmap.width * scale);
+      canvas.height = Math.round(bitmap.height * scale);
+      canvas.getContext('2d')!.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+      const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, 'image/jpeg', 0.82));
+      if (!blob) return file;
+      return new File([blob], file.name.replace(/\.\w+$/, '') + '.jpg', { type: 'image/jpeg' });
+    } catch {
+      return file; // z. B. HEIC in Browsern ohne Unterstützung – Original schicken
+    }
+  }
+
+  function renderPreviews() {
+    previews.replaceChildren(
+      ...photos.map((file, i) => {
+        const li = document.createElement('li');
+        li.className = 'relative aspect-square overflow-hidden rounded-lg bg-wald-100';
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        img.alt = '';
+        img.className = 'h-full w-full object-cover';
+        const del = document.createElement('button');
+        del.type = 'button';
+        del.textContent = '×';
+        del.setAttribute('aria-label', `Foto ${i + 1} entfernen`);
+        del.className = 'absolute right-1 top-1 h-6 w-6 rounded-full bg-black/60 text-sm leading-none text-white';
+        del.addEventListener('click', () => {
+          photos.splice(i, 1);
+          renderPreviews();
+        });
+        li.append(img, del);
+        return li;
+      }),
+    );
+  }
+
+  input.addEventListener('change', async () => {
+    const chosen = Array.from(input.files ?? []).slice(0, MAX_FILES - photos.length);
+    input.value = '';
+    photos = photos.concat(await Promise.all(chosen.map(shrink)));
+    renderPreviews();
+  });
+
+  function show(message: string, ok: boolean) {
+    status.textContent = message;
+    status.className = `rounded-xl px-4 py-3 text-sm ${ok ? 'bg-wald-50 text-wald-800' : 'bg-red-50 text-red-700'}`;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const data = new FormData(form);
+    data.delete('photos');
+    photos.forEach((p) => data.append('photos[]', p, p.name));
+    data.append('elapsed', String(Math.round((Date.now() - startedAt) / 1000)));
+
+    submit.disabled = true;
+    submit.textContent = 'Wird gesendet …';
+    try {
+      const res = await fetch(`${import.meta.env.BASE_URL.replace(/\/$/, '')}/send_email.php`, { method: 'POST', body: data });
+      const result = await res.json().catch(() => ({ success: false }));
+      if (result.success) {
+        form.querySelectorAll('input, textarea, select, button, label').forEach((el) => el.classList.add('hidden'));
+        show('Danke für Ihre Anfrage! Ich melde mich in der Regel innerhalb von 24 Stunden bei Ihnen.', true);
+        return;
+      }
+      show(result.message || 'Die Nachricht konnte nicht gesendet werden. Bitte rufen Sie mich an oder schreiben Sie eine E-Mail.', false);
+    } catch {
+      show('Verbindungsfehler. Bitte versuchen Sie es erneut oder rufen Sie mich an.', false);
+    }
+    submit.disabled = false;
+    submit.textContent = 'Anfrage senden';
+  });
+</script>

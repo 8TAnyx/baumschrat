@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import Breadcrumbs from './Breadcrumbs.astro';
+import type { Crumb } from '../data/seo';
+
+interface Props {
+  title: string;
+  lead?: string;
+  eyebrow?: string;
+  crumbs: Crumb[];
+  image?: ImageMetadata;
+  imageAlt?: string;
+}
+const { title, lead, eyebrow, crumbs, image, imageAlt = '' } = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-wald-900">
+  {
+    image && (
+      <>
+        <Image src={image} alt={imageAlt} widths={[640, 1024, 1600]} width={1600} height={800} fit="cover" quality={65} sizes="100vw" class="absolute inset-0 h-full w-full object-cover opacity-35" loading="eager" fetchpriority="high" />
+        <div class="absolute inset-0 bg-gradient-to-r from-wald-950/90 via-wald-900/70 to-wald-900/30" />
+      </>
+    )
+  }
+  <div class="container-page relative py-14 md:py-20">
+    <Breadcrumbs crumbs={crumbs} light />
+    {eyebrow && <p class="eyebrow mt-6 !text-moos-400">{eyebrow}</p>}
+    <h1 class="mt-3 max-w-3xl text-4xl text-white md:text-5xl">{title}</h1>
+    {lead && <p class="mt-5 max-w-2xl text-lg text-wald-100 md:text-xl">{lead}</p>}
+    <slot />
+  </div>
+</section>

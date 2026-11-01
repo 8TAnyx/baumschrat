@@ -1,0 +1,38 @@
+---
+title: "Borkenkäfer: Kontrolle, Fällung & Schadholzentfernung"
+kurz: "Borkenkäfer-Hilfe"
+seoTitle: "Borkenkäfer Graz – Befall prüfen & Fichte fällen | Baumschrat"
+description: "Borkenkäfer im Garten in Graz und Umgebung? Befallskontrolle, rasche Fällung befallener Fichten, Abtransport des Schadholzes und Unterstützung bei der Meldung an die Stadt."
+teaser: "Verdacht auf Borkenkäfer? Ich prüfe den Befall, fälle befallene Fichten rasch und sicher und unterstütze Sie bei der Meldung an die Stadt."
+icon: "bug"
+order: 7
+image: "../../assets/fotos/work-7.jpg"
+imageAlt: "Baumpfleger mit Helm in einer Baumkrone über dem Grazer Umland"
+faq:
+  - frage: "Wie erkenne ich einen Borkenkäferbefall?"
+    antwort: "Typische Anzeichen sind braunes Bohrmehl in Rindenritzen und am Stammfuß, kleine Einbohrlöcher, Harztröpfchen am Stamm, abfallende Rinde und Spechtabschläge. Eine rotbraun verfärbte Krone ist ein spätes Zeichen – dann haben die Käfer den Baum oft schon verlassen."
+  - frage: "Wie schnell muss ein befallener Baum weg?"
+    antwort: "So schnell wie möglich, idealerweise bevor die nächste Käfergeneration ausfliegt – das sind im Sommer oft nur wenige Wochen. Rinde und Holz müssen vom Grundstück, damit sich die Käfer nicht auf gesunde Fichten in der Nachbarschaft ausbreiten."
+  - frage: "Muss ich die Fällung in Graz melden?"
+    antwort: "Ja, auch ein befallener oder abgestorbener Baum bleibt nach der Grazer Baumschutzverordnung geschützt, wenn er groß genug ist. Die Anzeige lohnt sich: Mit Meldung ist die Ersatzpflanzung meist 1:1, ohne Meldung richtet sie sich nach dem Stammumfang und es droht eine Strafe."
+---
+
+Der **Borkenkäfer** – in unseren Breiten vor allem der Buchdrucker und der Kupferstecher – befällt vor allem geschwächte Fichten. Nach Schneebruch, Sturm und trockenen Sommern ist der Druck auch in Gärten und Parks rund um Graz hoch. Ein befallener Baum stirbt meist innerhalb einer Saison ab – und wird zur Brutstätte für die nächste Käfergeneration.
+
+## Was ich für Sie tue
+
+- **Befallskontrolle:** Ich prüfe verdächtige Fichten auf Bohrmehl, Einbohrlöcher, Harzfluss und Brutbild unter der Rinde – bei hohen Bäumen auch per [Drohne](/leistungen/drohneninspektion/).
+- **Rasche Fällung:** Befallene Bäume entferne ich zügig, auch an schwierigen Standorten per [Spezialfällung](/leistungen/spezialfaellungen/).
+- **Schadholz vom Grundstück:** Rinde und Holz werden abtransportiert, damit keine Käfer ausfliegen.
+- **Dokumentation für die Behörde:** Fotos, Stammumfang und Befund – die Grundlage für Ihre Anzeige nach der Grazer Baumschutzverordnung.
+- **Nachbarbäume im Blick:** Gesunde Fichten in der Umgebung kontrolliere ich mit, damit der Befall nicht weiterzieht.
+
+## Warum Abwarten teuer wird
+
+Ein befallener Baum ist nicht mehr zu retten. Jede Woche, die er stehen bleibt, erhöht das Risiko für Nachbarbäume und – weil abgestorbene Fichten rasch spröde werden – auch die Bruchgefahr. Eine frühe, geplante Fällung ist fast immer günstiger als ein Notfalleinsatz oder ein Folgeschaden beim Nachbarn.
+
+## Mehr zum Thema im Ratgeber
+
+- [Borkenkäfer 2026: So ist die Lage in Graz und der Steiermark](/ratgeber/borkenkaefer-2026-graz-steiermark/)
+- [Borkenkäferbefall erkennen: die wichtigsten Anzeichen](/ratgeber/borkenkaeferbefall-erkennen/)
+- [Borkenkäfer-Baum fällen in Graz: Warum sich die Meldung lohnt](/ratgeber/borkenkaefer-meldung-ersatzpflanzung-graz/)

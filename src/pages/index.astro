@@ -1,0 +1,221 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, u } from '../data/site';
+import { faqAllgemein } from '../data/faq';
+import { faqLd } from '../data/seo';
+import heroImg from '../assets/fotos/work-1.jpg';
+import about1 from '../assets/fotos/work-9.jpg';
+import about2 from '../assets/fotos/work-7.jpg';
+
+const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
+const regionen = (await getCollection('regionen')).sort((a, b) => a.data.order - b.data.order);
+const artikel = (await getCollection('ratgeber', (p) => !p.data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+const faq = faqAllgemein.slice(0, 5);
+
+const schritte = [
+  { titel: 'Anfrage', text: 'Rufen Sie an oder schicken Sie mir Fotos über das Formular.' },
+  { titel: 'Besichtigung', text: 'Ich sehe mir den Baum vor Ort an – kostenlos und unverbindlich.' },
+  { titel: 'Angebot', text: 'Sie bekommen ein klares Angebot und Infos zu nötigen Genehmigungen.' },
+  { titel: 'Ausführung', text: 'Sichere, saubere Arbeit – auf Wunsch inklusive Abtransport.' },
+];
+---
+
+<Base
+  title="Baumpflege & Baumfällung Graz – ÖNORM L 1122 | Baumschrat"
+  description={site.description}
+  image={heroImg}
+  jsonLd={faqLd(faq)}
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-wald-900">
+    <div class="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-wald-700/40 blur-3xl"></div>
+    <div class="container-page relative grid items-center gap-10 py-12 md:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:py-20">
+      <div>
+        <p class="eyebrow !text-moos-400">Baumpflege · Baumkontrolle · Spezialfällungen</p>
+        <h1 class="mt-4 text-4xl leading-[1.08] text-white sm:text-5xl lg:text-6xl">
+          Ihr Baumpfleger für Graz, Graz-Umgebung und das Mürztal.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-wald-100 md:text-xl">
+          Fachgerechte Baumpflege nach ÖNORM L 1122, Baumkontrolle, Drohnen-Baumprüfung und sichere Fällungen mit Seilklettertechnik – persönlich ausgeführt von {site.owner}.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={u('/kontakt/')} class="btn-primary"><Icon name="camera" class="h-5 w-5" /> Kostenloses Angebot</a>
+          <a href={site.phoneHref} class="btn-ghost"><Icon name="phone" class="h-5 w-5" /> {site.phone}</a>
+        </div>
+        <ul class="mt-8 grid gap-2 text-sm text-wald-100 sm:grid-cols-3">
+          <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Arbeit nach ÖNORM</li>
+          <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Besichtigung gratis</li>
+          <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Antwort in 24 h</li>
+        </ul>
+      </div>
+      <div class="relative mx-auto w-full max-w-sm lg:max-w-none">
+        <Image
+          src={heroImg}
+          alt="Baumkletterer am verbliebenen Stamm einer Fichte vor blauem Himmel"
+          widths={[480, 720, 960]} width={960}
+          sizes="(min-width: 1024px) 440px, (min-width: 640px) 384px, 100vw"
+          class="aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl ring-1 ring-white/10"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="absolute -bottom-5 -left-4 flex items-center gap-3 rounded-2xl bg-papier px-4 py-3 shadow-xl sm:-left-8">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full bg-wald-700 text-white"><Icon name="rope" class="h-5 w-5" /></span>
+          <span class="text-sm leading-tight"><strong class="block text-wald-900">Seilklettertechnik</strong>auch wo kein Kran hinkommt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section class="py-16 md:py-24" id="leistungen">
+    <div class="container-page">
+      <div class="max-w-2xl">
+        <p class="eyebrow">Leistungen</p>
+        <h2 class="mt-2 text-3xl md:text-4xl">Alles rund um Ihre Bäume – aus einer Hand</h2>
+        <p class="mt-4 text-lg text-tinte/75">
+          Von der Pflege über die Kontrolle bis zur Fällung. Was ich nicht selbst mache, deckt mein Netzwerk aus erfahrenen Partnerbetrieben ab.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {leistungen.map((s) => <ServiceCard service={s} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Borkenkäfer-Schwerpunkt -->
+  <section class="bg-moos-100">
+    <div class="container-page grid items-center gap-8 py-14 md:grid-cols-[auto_1fr_auto]">
+      <span class="flex h-16 w-16 items-center justify-center rounded-2xl bg-wald-800 text-white"><Icon name="bug" class="h-8 w-8" /></span>
+      <div>
+        <p class="eyebrow">Aktuell</p>
+        <h2 class="mt-1 text-2xl md:text-3xl">Borkenkäfer 2026: Fichten jetzt kontrollieren</h2>
+        <p class="mt-2 max-w-2xl text-tinte/80">
+          Rund 500.000 Festmeter Schadholz in der Steiermark. Befallene Bäume sollten über den Winter weg – und in Graz lohnt sich die Meldung bei der Stadt.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2 text-sm font-semibold">
+        <a href={u('/ratgeber/borkenkaefer-2026-graz-steiermark/')} class="inline-flex items-center gap-1 text-wald-800 hover:text-rinde-600">Lage 2026 <Icon name="arrow-right" class="h-4 w-4" /></a>
+        <a href={u('/ratgeber/borkenkaeferbefall-erkennen/')} class="inline-flex items-center gap-1 text-wald-800 hover:text-rinde-600">Befall erkennen <Icon name="arrow-right" class="h-4 w-4" /></a>
+        <a href={u('/ratgeber/borkenkaefer-meldung-ersatzpflanzung-graz/')} class="inline-flex items-center gap-1 text-wald-800 hover:text-rinde-600">Meldung &amp; Ersatzpflanzung <Icon name="arrow-right" class="h-4 w-4" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über mich -->
+  <section class="py-16 md:py-24" id="ueber-mich">
+    <div class="container-page grid items-center gap-12 lg:grid-cols-2">
+      <div class="relative order-last lg:order-first">
+        <Image src={about1} alt="Daniel Lindner mit Helm und Seil in einer Baumkrone, im Hintergrund ein Schloss" widths={[480, 800]} width={800} sizes="(min-width: 1024px) 420px, 80vw" class="aspect-[4/3] w-4/5 rounded-3xl object-cover shadow-lg" />
+        <Image src={about2} alt="Daniel Lindner im Wipfel eines Baumes mit Blick über das Grazer Umland" widths={[360, 600]} width={600} sizes="(min-width: 1024px) 300px, 55vw" class="absolute -bottom-8 right-0 aspect-square w-1/2 rounded-3xl border-8 border-papier object-cover shadow-lg" />
+      </div>
+      <div>
+        <p class="eyebrow">Über mich</p>
+        <h2 class="mt-2 text-3xl md:text-4xl">Ein Ansprechpartner – vom ersten Anruf bis zum letzten Ast</h2>
+        <div class="mt-5 space-y-4 text-lg text-tinte/80">
+          <p>
+            Als Einmann-Betrieb stehe ich persönlich für Qualität, Zuverlässigkeit und fachgerechte Ausführung – ob es darum geht, einen Baum zu fällen oder ihn durch fachkundige Pflege zu erhalten. Durch meine Ausbildung und die enge Vernetzung mit erfahrenen Kollegen kann ich Ihnen Lösungen für alle Baumarbeiten anbieten.
+          </p>
+          <p>
+            Mein Einsatzgebiet umfasst das gesamte Grazer Stadtgebiet, Graz-Umgebung und reicht bis ins Mürztal. Dabei lege ich besonderen Wert auf Sicherheit, Baumschutz und ehrliche Beratung.
+          </p>
+        </div>
+        <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+          {
+            [
+              ['users', 'Persönlicher Service', 'Direkter Kontakt zum Ausführenden'],
+              ['check-circle', 'Kostenlose Beratung', 'Unverbindliche Besichtigung und Angebot'],
+              ['map-pin', 'Regionale Nähe', 'Kurze Wege, schnelle Reaktion'],
+              ['shield-check', 'Faire Preise', 'Transparente Kostenaufstellung'],
+            ].map(([icon, title, text]) => (
+              <li class="flex gap-3">
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-wald-50 text-wald-700"><Icon name={icon} class="h-5 w-5" /></span>
+                <span><strong class="block text-wald-900">{title}</strong><span class="text-sm text-tinte/70">{text}</span></span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section class="bg-white py-16 md:py-20">
+    <div class="container-page">
+      <p class="eyebrow">So einfach geht's</p>
+      <h2 class="mt-2 text-3xl md:text-4xl">In vier Schritten zum gepflegten Baum</h2>
+      <ol class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          schritte.map((s, i) => (
+            <li class="relative rounded-2xl bg-papier p-6">
+              <span class="font-display text-5xl font-semibold text-wald-200">{i + 1}</span>
+              <h3 class="mt-2 text-xl">{s.titel}</h3>
+              <p class="mt-1 text-tinte/75">{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- Einsatzgebiet -->
+  <section class="py-16 md:py-24">
+    <div class="container-page">
+      <p class="eyebrow">Einsatzgebiet</p>
+      <h2 class="mt-2 text-3xl md:text-4xl">Graz, Graz-Umgebung und Mürztal</h2>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {
+          regionen.map((r) => (
+            <a href={u(`/einsatzgebiet/${r.id}/`)} class="group relative flex min-h-64 flex-col justify-end overflow-hidden rounded-2xl p-6 text-white">
+              <Image src={r.data.image} alt="" widths={[400, 700]} width={700} sizes="(min-width: 768px) 33vw, 100vw" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-wald-950/90 via-wald-950/40 to-transparent" />
+              <div class="relative">
+                <h3 class="text-2xl text-white">{r.data.name}</h3>
+                <p class="mt-1 text-sm text-wald-100">{r.data.teaser}</p>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Ratgeber -->
+  <section class="bg-white py-16 md:py-24">
+    <div class="container-page">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="eyebrow">Ratgeber</p>
+          <h2 class="mt-2 text-3xl md:text-4xl">Wissen rund um Ihre Bäume</h2>
+        </div>
+        <a href={u('/ratgeber/')} class="inline-flex items-center gap-1 font-semibold text-wald-700 hover:text-rinde-600">Alle Artikel <Icon name="arrow-right" class="h-4 w-4" /></a>
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {artikel.map((p) => <ArticleCard post={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 md:py-24">
+    <div class="container-page grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+      <div>
+        <p class="eyebrow">Häufige Fragen</p>
+        <h2 class="mt-2 text-3xl md:text-4xl">Gut zu wissen</h2>
+        <p class="mt-4 text-tinte/75">Ihre Frage ist nicht dabei? Rufen Sie mich einfach an.</p>
+        <a href={u('/faq/')} class="mt-6 inline-flex items-center gap-1 font-semibold text-wald-700 hover:text-rinde-600">Alle Fragen &amp; Antworten <Icon name="arrow-right" class="h-4 w-4" /></a>
+      </div>
+      <Faq items={faq} />
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>

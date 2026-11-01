@@ -1,0 +1,59 @@
+---
+import { Image, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { galerie } from '../data/galerie';
+import { breadcrumbLd } from '../data/seo';
+
+const crumbs = [
+  { label: 'Start', href: '/' },
+  { label: 'Galerie', href: '/galerie/' },
+];
+// Große Version für die Vollbildansicht
+const bilder = await Promise.all(galerie.map(async (b) => ({ ...b, gross: await getImage({ src: b.src, ...(b.src.height > b.src.width ? { height: 1600 } : { width: 1600 }), format: 'webp', quality: 70 }) })));
+---
+
+<Base
+  title="Galerie: Baumarbeiten in Graz in Bildern | Baumschrat"
+  description="Einblicke in Baumpflege, Spezialfällungen und Abtragungen mit Seilklettertechnik in Graz und Umgebung – Fotos aus der Arbeit von Baumschrat."
+  image={galerie[0].src}
+  jsonLd={breadcrumbLd(crumbs, Astro.site!)}
+>
+  <PageHero title="Unsere Arbeit in Bildern" lead="Einblicke in Baumpflege, Spezialfällungen und Abtragungen in Graz und Umgebung." eyebrow="Galerie" crumbs={crumbs} />
+  <section class="py-14 md:py-20">
+    <div class="container-page columns-1 gap-4 sm:columns-2 lg:columns-3">
+      {
+        bilder.map((b) => (
+          <a href={b.gross.src} class="lightbox mb-4 block break-inside-avoid overflow-hidden rounded-2xl" data-alt={b.alt}>
+            <Image src={b.src} alt={b.alt} widths={[400, 700]} width={700} sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" class="w-full transition duration-500 hover:scale-[1.03]" />
+          </a>
+        ))
+      }
+    </div>
+  </section>
+  <dialog id="lightbox" class="m-auto max-h-[95vh] max-w-[95vw] bg-transparent p-0 backdrop:bg-black/85">
+    <form method="dialog">
+      <button class="absolute right-3 top-3 z-10 h-10 w-10 rounded-full bg-black/60 text-2xl text-white" aria-label="Schließen">×</button>
+    </form>
+    <img id="lightbox-img" alt="" class="max-h-[90vh] max-w-[95vw] rounded-xl object-contain" />
+    <p id="lightbox-cap" class="mt-2 text-center text-sm text-white"></p>
+  </dialog>
+  <CtaBand />
+</Base>
+
+<script>
+  const dialog = document.getElementById('lightbox') as HTMLDialogElement;
+  const img = document.getElementById('lightbox-img') as HTMLImageElement;
+  const cap = document.getElementById('lightbox-cap')!;
+  document.querySelectorAll<HTMLAnchorElement>('a.lightbox').forEach((a) =>
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      img.src = a.href;
+      img.alt = a.dataset.alt ?? '';
+      cap.textContent = a.dataset.alt ?? '';
+      dialog.showModal();
+    }),
+  );
+  dialog.addEventListener('click', (e) => e.target === dialog && dialog.close());
+</script>

@@ -1,0 +1,24 @@
+---
+import { u } from '../data/site';
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '../data/seo';
+
+interface Props {
+  post: CollectionEntry<'ratgeber'>;
+}
+const { post } = Astro.props;
+---
+
+<article class="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-md">
+  <a href={u(`/ratgeber/${post.id}/`)} class="flex h-full flex-col">
+    <Image src={post.data.image} alt={post.data.imageAlt} widths={[400, 700]} width={700} sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" class="aspect-[16/10] w-full object-cover" />
+    <div class="flex flex-1 flex-col p-5">
+      <p class="text-xs font-semibold uppercase tracking-widest text-moos-600">
+        {post.data.thema} · <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+      </p>
+      <h3 class="mt-2 text-xl leading-snug group-hover:text-wald-700">{post.data.title}</h3>
+      <p class="mt-2 line-clamp-3 text-sm leading-relaxed text-tinte/75">{post.data.description}</p>
+    </div>
+  </a>
+</article>

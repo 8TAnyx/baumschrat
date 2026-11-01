@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { site } from '../data/site';
+
+const crumbs = [
+  { label: 'Start', href: '/' },
+  { label: 'Impressum', href: '/impressum/' },
+];
+// TODO vor dem Go-live: Felder mit [bitte ergänzen] mit den Daten aus dem Gewerberegister (GISA) befüllen.
+---
+
+<Base title="Impressum | Baumschrat" description="Impressum und Offenlegung gemäß § 5 ECG und § 25 Mediengesetz für baumschrat.at.">
+  <PageHero title="Impressum" eyebrow="Rechtliches" crumbs={crumbs} />
+  <section class="py-14">
+    <div class="container-page prose-baum max-w-3xl">
+      <p class="text-sm">Informationen gemäß § 5 E-Commerce-Gesetz und Offenlegung gemäß § 25 Mediengesetz</p>
+      <h2>Medieninhaber und Diensteanbieter</h2>
+      <p>
+        <strong>{site.owner}</strong> – Baumschrat<br />
+        {site.street}<br />
+        {site.zip} {site.city}, Österreich
+      </p>
+      <p>
+        Telefon: <a href={site.phoneHref}>{site.phone}</a><br />
+        E-Mail: <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+      <h2>Unternehmensangaben</h2>
+      <ul>
+        <li>Unternehmensgegenstand: Baumpflege, Baumkontrolle und Baumfällung</li>
+        <li>Gewerbe: <mark>[bitte ergänzen – lt. Gewerbeschein]</mark></li>
+        <li>Gewerbebehörde: Magistrat der Stadt Graz</li>
+        <li>Kammerzugehörigkeit: Wirtschaftskammer Steiermark</li>
+        <li>UID-Nummer: <mark>[bitte ergänzen oder streichen, falls keine vorhanden]</mark></li>
+        <li>Anwendbare Rechtsvorschriften: Gewerbeordnung, abrufbar unter <a href="https://www.ris.bka.gv.at" rel="noopener">www.ris.bka.gv.at</a></li>
+        <li>Eintrag im Firmen A–Z der WKO: <a href={site.wkoUrl} rel="noopener" target="_blank">Daniel Lindner</a></li>
+      </ul>
+      <h2>Grundlegende Richtung</h2>
+      <p>Information über die Leistungen von Baumschrat sowie Fachinformationen rund um Baumpflege, Baumsicherheit und Baumschutz.</p>
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Die Ratgeber-Artikel wurden sorgfältig recherchiert, ersetzen aber keine Rechtsberatung. Für verbindliche Auskünfte zu Genehmigungen wenden Sie sich bitte an die zuständige Behörde. Für Inhalte verlinkter externer Seiten sind ausschließlich deren Betreiber verantwortlich.
+      </p>
+      <h2>Online-Streitbeilegung</h2>
+      <p>
+        Verbraucher haben die Möglichkeit, Beschwerden an die Online-Streitbeilegungsplattform der EU zu richten. Sie können allfällige Beschwerden auch an die oben angegebene E-Mail-Adresse richten.
+      </p>
+    </div>
+  </section>
+</Base>
