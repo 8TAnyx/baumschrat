@@ -65,7 +65,7 @@ Für eine Anzeige nach der Baumschutzverordnung fallen laut Stadt Graz meist Kos
 
 ## Wichtig: Gilt nicht für Wald und nicht außerhalb von Graz
 
-Das Steiermärkische Baumschutzgesetz und damit die Grazer Verordnung gelten **nicht für Wald** im Sinne des Forstgesetzes. Für Waldflächen gelten die forstrechtlichen Regeln – dort sind Waldbesitzer verpflichtet, befallenes Holz rechtzeitig aufzuarbeiten. In den Gemeinden von **Graz-Umgebung** gilt die Grazer Verordnung ebenfalls nicht.
+Das Steiermärkische Baumschutzgesetz und damit die Grazer Verordnung gelten **nicht für Wald** im Sinne des Forstgesetzes. Für Waldflächen gelten die forstrechtlichen Regeln – dort sind Waldbesitzer verpflichtet, befallenes Holz rechtzeitig aufzuarbeiten. Außerhalb der Stadt Graz gilt die Grazer Verordnung ebenfalls nicht.
 
 ## Ich helfe Ihnen dabei
 

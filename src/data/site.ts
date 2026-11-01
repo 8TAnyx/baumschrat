@@ -4,7 +4,7 @@ export const site = {
   owner: 'Daniel Lindner',
   tagline: 'Baumpflege, Baumkontrolle & Sonderfällungen in Graz',
   description:
-    'Baumschrat – Baumpflege nach ÖNORM L 1122, Baumkontrolle, Drohnen-Baumprüfung, Sonderfällungen und Borkenkäfer-Hilfe in Graz, Graz-Umgebung und im Mürztal.',
+    'Baumschrat – Baumpflege nach ÖNORM L 1122, Baumkontrolle, Drohnen-Baumprüfung, Sonderfällungen und Borkenkäfer-Hilfe aus Graz – im Einsatz in der ganzen Steiermark.',
   phone: '+43 650 9999539',
   phoneHref: 'tel:+436509999539',
   email: 'daniel@baumschrat.at',
@@ -14,7 +14,7 @@ export const site = {
   region: 'Steiermark',
   country: 'AT',
   geo: { lat: 47.0667, lng: 15.4206 },
-  areas: ['Graz', 'Graz-Umgebung', 'Mürztal'],
+  areas: ['Graz', 'Steiermark'],
   wkoUrl:
     'https://firmen.wko.at/daniel-lindner/steiermark/?firmaid=a3580f35-b993-4cd0-9f3b-1cc9965627b8',
 };

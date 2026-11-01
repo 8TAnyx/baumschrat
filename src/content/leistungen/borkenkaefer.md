@@ -3,7 +3,7 @@ title: "Borkenkäfer: Kontrolle, Fällung & Schadholzentfernung"
 gruppe: "schaeden"
 kurz: "Borkenkäfer-Hilfe"
 seoTitle: "Borkenkäfer Graz – Befall prüfen & Fichte fällen | Baumschrat"
-description: "Borkenkäfer im Garten in Graz und Umgebung? Befallskontrolle, rasche Fällung befallener Fichten, Abtransport des Schadholzes und Unterstützung im Kontakt mit den Behörden."
+description: "Borkenkäfer im Garten in Graz und der Steiermark? Befallskontrolle, rasche Fällung befallener Fichten, Abtransport des Schadholzes und Unterstützung im Kontakt mit den Behörden."
 teaser: "Verdacht auf Borkenkäfer? Ich prüfe den Befall, fälle befallene Fichten rasch und sicher und unterstütze Sie im Kontakt mit den Behörden."
 icon: "bug"
 order: 7

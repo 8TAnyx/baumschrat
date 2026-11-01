@@ -3,7 +3,7 @@ title: "Sonderfällung & Abtragung mit Seilklettertechnik"
 kurz: "Sonderfällung"
 gruppe: "faellen"
 seoTitle: "Sonderfällung Graz – Abtragung mit Seilklettertechnik | Baumschrat"
-description: "Sonderfällung in Graz und Umgebung: Bäume direkt am Haus, über Leitungen oder in engen Gärten werden mit Seilklettertechnik von oben abgetragen und Stück für Stück kontrolliert abgeseilt."
+description: "Sonderfällung in Graz und der Steiermark: Bäume direkt am Haus, über Leitungen oder in engen Gärten werden mit Seilklettertechnik von oben abgetragen und Stück für Stück kontrolliert abgeseilt."
 teaser: "Kein Platz zum Umlegen? Ich trage den Baum mit Seilklettertechnik von oben ab und seile jedes Stück kontrolliert ab – auch direkt am Haus."
 icon: "rope"
 order: 6

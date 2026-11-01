@@ -1,9 +1,9 @@
 ---
-title: "Baumfällung in Graz und Umgebung"
+title: "Baumfällung in Graz und der Steiermark"
 kurz: "Baumfällung"
 gruppe: "faellen"
 seoTitle: "Baum fällen Graz – Baumfällung vom Fachmann | Baumschrat"
-description: "Baum fällen in Graz und Umgebung: sichere, fachgerechte Baumfällung inklusive Beratung zur Baumschutzverordnung, Aufräumen und Entsorgung. Kostenloses Angebot."
+description: "Baum fällen in Graz und der ganzen Steiermark: sichere, fachgerechte Baumfällung inklusive Beratung zur Baumschutzverordnung, Aufräumen und Entsorgung. Kostenloses Angebot."
 teaser: "Sichere Fällung inklusive Beratung zur Grazer Baumschutzverordnung, Aufräumen und Abtransport – alles aus einer Hand."
 icon: "tree-pine"
 order: 5
@@ -36,4 +36,4 @@ Ist rund um den Baum genug Platz, wird er mit Fallkerb und Fällschnitt gezielt 
 
 In Graz sind Bäume ab 50 cm Stammumfang geschützt. Wer ohne Anzeige fällt, riskiert eine Verwaltungsstrafe und eine deutlich höhere Ersatzpflanzungspflicht. Die Behörde hat acht Wochen Zeit für eine Entscheidung – planen Sie also rechtzeitig. Alle Details im Ratgeber [Baum fällen in Graz: Was die Baumschutzverordnung erlaubt](/ratgeber/baumschutzverordnung-graz-baum-faellen/).
 
-Für Gemeinden in **Graz-Umgebung** und im **Mürztal** gilt die Grazer Verordnung nicht – dort kläre ich mit Ihnen, welche Regeln vor Ort zu beachten sind.
+Außerhalb der Stadt Graz gilt die Grazer Verordnung nicht – dort kläre ich mit Ihnen, welche Regeln vor Ort zu beachten sind.
