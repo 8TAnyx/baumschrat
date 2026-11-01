@@ -1,6 +1,6 @@
 ---
 title: "Baumabtragung unter beengten Verhältnissen"
-date: 2026-08-07
+date: 2026-06-17
 description: "Wie Bäume in Gärten, an Gebäuden oder in engen Innenhöfen sicher in Teilstücken entfernt werden, wenn für eine klassische Fällung kein Platz ist."
 image: "../../assets/fotos/work-2.jpg"
 imageAlt: "Blick von oben auf ein abgeseiltes Stammstück über einem Garten"

@@ -1,6 +1,6 @@
 ---
 title: "Die Kastanienminiermotte ist zurück: Was Besitzer von Rosskastanien jetzt tun sollten"
-date: 2026-06-05
+date: 2026-10-28
 description: "Für Ostösterreich läuft 2026 eine aktuelle Warnung vor der Kastanienminiermotte. Wie Sie den Schädling an Ihrer Rosskastanie erkennen und was jetzt sinnvoll ist."
 image: "../../assets/fotos/work-3.jpg"
 imageAlt: "Kletterausrüstung und Motorsäge an einem Holzgeländer vor einem Teich mit Trauerweide"

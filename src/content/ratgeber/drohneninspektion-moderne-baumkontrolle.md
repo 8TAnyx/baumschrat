@@ -1,6 +1,6 @@
 ---
 title: "Baumkontrolle aus der Luft: Wie Drohnentechnologie die Baumpflege verändert"
-date: 2026-07-18
+date: 2026-10-12
 description: "Resistograph, Schalltomographie oder Sichtkontrolle – bei der Baumkontrolle gibt es viele Methoden. Warum die Drohneninspektion gerade bei hohen und schwer zugänglichen Kronen eine sinnvolle Ergänzung ist."
 image: "../../assets/fotos/krone-hoehlungen.jpg"
 imageAlt: "Höhlungen und Faulstellen in der Krone eines Laubbaums, von oben gesehen"
