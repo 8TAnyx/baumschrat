@@ -3,13 +3,15 @@ title: "Borkenkäfer: Kontrolle, Fällung & Schadholzentfernung"
 gruppe: "schaeden"
 kurz: "Borkenkäfer-Hilfe"
 seoTitle: "Borkenkäfer Graz – Befall prüfen & Fichte fällen | Baumschrat"
-description: "Borkenkäfer im Garten in Graz und der Steiermark? Befallskontrolle, rasche Fällung befallener Fichten, Abtransport des Schadholzes und Unterstützung im Kontakt mit den Behörden."
-teaser: "Verdacht auf Borkenkäfer? Ich prüfe den Befall, fälle befallene Fichten rasch und sicher und unterstütze Sie im Kontakt mit den Behörden."
+description: "Borkenkäfer im Garten in Graz und der Steiermark? Befallskontrolle, rasche Fällung befallener Fichten und Abtransport des Schadholzes. Bei Befall entfällt die Nachpflanzung – das spart viel Geld."
+teaser: "Verdacht auf Borkenkäfer? Ich prüfe den Befall und fälle befallene Fichten rasch und sicher. Bei Befall ist keine Nachpflanzung nötig – das spart viel Geld."
 icon: "bug"
 order: 7
 image: "../../assets/fotos/abtragung-blick-garten.jpg"
 imageAlt: "Blick vom Wipfel einer gekürzten Fichte über Gärten und Dächer, das Seil im Vordergrund"
 faq:
+  - frage: "Muss ich nach der Fällung eines Borkenkäferbaums nachpflanzen?"
+    antwort: "Nein. Bei Borkenkäferbefall besichtigt die Forstbehörde den Baum. Ordnet sie die Fällung an, ist für diesen Baum keine Nachpflanzung nötig – auch in Graz nicht. Sie sparen sich damit den Ersatzbaum, die Pflanzung und eine mögliche Ausgleichszahlung."
   - frage: "Wie erkenne ich einen Borkenkäferbefall?"
     antwort: "Typische Anzeichen sind braunes Bohrmehl in Rindenritzen und am Stammfuß, kleine Einbohrlöcher, Harztröpfchen am Stamm, abfallende Rinde und Spechtabschläge. Eine rotbraun verfärbte Krone ist ein spätes Zeichen – dann haben die Käfer den Baum oft schon verlassen."
   - frage: "Wie schnell muss ein befallener Baum weg?"
@@ -19,6 +21,10 @@ faq:
 ---
 
 Der **Borkenkäfer** – in unseren Breiten vor allem der Buchdrucker und der Kupferstecher – befällt vor allem geschwächte Fichten. Nach Schneebruch, Sturm und trockenen Sommern ist der Druck auch in Gärten und Parks rund um Graz hoch. Ein befallener Baum stirbt meist innerhalb einer Saison ab – und wird zur Brutstätte für die nächste Käfergeneration.
+
+## Ihr Vorteil: keine Nachpflanzung
+
+Bei Borkenkäferbefall wird der Baum **von der Forstbehörde besichtigt**. Ordnet sie die Fällung an, ist für diesen Baum **keine Nachpflanzung nötig** – auch in Graz nicht, wo für geschützte Bäume sonst meist ein Ersatzbaum vorgeschrieben wird. **Das spart Ihnen viel Geld:** kein Ersatzbaum, keine Pflanzung, keine Ausgleichszahlung. Die Hintergründe stehen im Ratgeber [Borkenkäfer-Baum fällen in Graz](/ratgeber/borkenkaefer-meldung-ersatzpflanzung-graz/).
 
 ## Was ich für Sie tue
 
