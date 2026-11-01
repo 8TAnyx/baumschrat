@@ -41,20 +41,4 @@ const ratgeber = defineCollection({
     }),
 });
 
-const regionen = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/regionen' }),
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      name: z.string(),
-      seoTitle: z.string(),
-      description: z.string(),
-      teaser: z.string(),
-      order: z.number(),
-      image: image(),
-      imageAlt: z.string(),
-      orte: z.array(z.string()).default([]),
-    }),
-});
-
-export const collections = { leistungen, ratgeber, regionen };
+export const collections = { leistungen, ratgeber };
