@@ -17,8 +17,6 @@ import efeustamm from '../assets/fotos/kletterer-efeustamm.jpg';
 import seilkletter from '../assets/fotos/seilklettertechnik-stamm.jpg';
 import ausruestung from '../assets/fotos/kletterausruestung-krone.jpg';
 import hoehlungen from '../assets/fotos/krone-hoehlungen.jpg';
-import pilz from '../assets/fotos/pilz-am-stamm.jpg';
-import pilzEfeu from '../assets/fotos/baumpilz-efeu.jpg';
 import kernfaeule from '../assets/fotos/kernfaeule-querschnitt.jpg';
 import borkenkaefer from '../assets/fotos/borkenkaefer-frassbild.jpg';
 import portraet from '../assets/fotos/portraet-winter.jpg';
@@ -32,7 +30,6 @@ export const galerie = [
   { src: w7, alt: 'Daniel Lindner im Wipfel mit Blick über das Grazer Umland' },
   { src: rigging, alt: 'Angeschlagenes Stammstück beim Abseilen' },
   { src: w1, alt: 'Sonderfällung: am verbliebenen Stamm einer Fichte vor blauem Himmel' },
-  { src: pilz, alt: 'Baumpilz und Rindenriss an einem Laubbaumstamm' },
   { src: faellungParkplatz, alt: 'Fällung an einem Parkplatz in Graz, Blick aus dem Baum' },
   { src: w6, alt: 'Rückschnitt eines Starkastes mit der Motorsäge, gesichert im Seil' },
   { src: kiefer, alt: 'Im Seil an einer hohen Kiefer' },
@@ -46,7 +43,6 @@ export const galerie = [
   { src: w9, alt: 'Daniel Lindner in der Krone, im Hintergrund Schloss Eggenberg' },
   { src: seilkletter, alt: 'Seilklettertechnik am Stamm eines Laubbaums' },
   { src: abtragungGarten, alt: 'Blick vom Wipfel einer gekürzten Fichte über Gärten und Dächer' },
-  { src: pilzEfeu, alt: 'Baumpilz an einem efeubewachsenen Stamm' },
   { src: ausruestung, alt: 'Kletterausrüstung im Seil in einer Baumkrone' },
   { src: portraet, alt: 'Daniel Lindner im Winter in den Bergen' },
   { src: w3, alt: 'Kletterausrüstung und Motorsäge vor einem Teich mit Trauerweide' },
