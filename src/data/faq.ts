@@ -13,7 +13,7 @@ export const faqAllgemein = [
   {
     frage: 'In welchem Gebiet sind Sie tätig?',
     antwort:
-      'Im gesamten Grazer Stadtgebiet, in Graz-Umgebung und im Mürztal – von Gratkorn bis Kalsdorf und von Kapfenberg bis Mürzzuschlag.',
+      'Mein Betrieb sitzt in Graz. Im Einsatz bin ich im ganzen Stadtgebiet, in Graz-Umgebung und in der übrigen Steiermark.',
   },
   {
     frage: 'Brauche ich in Graz eine Genehmigung, um einen Baum zu fällen?',

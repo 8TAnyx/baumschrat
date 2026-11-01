@@ -3,7 +3,7 @@ title: "Sturmschäden & Notfälle"
 gruppe: "schaeden"
 kurz: "Sturmschäden"
 seoTitle: "Sturmschaden Baum Graz – rasche Hilfe | Baumschrat"
-description: "Sturmschaden am Baum in Graz und Umgebung: rasche Sicherung angebrochener Bäume und Äste, Entfernung umgestürzter Bäume und Dokumentation für die Versicherung."
+description: "Sturmschaden am Baum in Graz und der Steiermark: rasche Sicherung angebrochener Bäume und Äste, Entfernung umgestürzter Bäume und Dokumentation für die Versicherung."
 teaser: "Angebrochener Ast, umgestürzter Baum, hängende Krone? Rasche Sicherung und Räumung – mit Dokumentation für die Versicherung."
 icon: "wind"
 order: 8
