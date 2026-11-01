@@ -8,6 +8,7 @@ interface Props {
   post: CollectionEntry<'ratgeber'>;
 }
 const { post } = Astro.props;
+import { trennen } from '../lib/trennen';
 ---
 
 <article class="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-md">
@@ -17,7 +18,7 @@ const { post } = Astro.props;
       <p class="text-xs font-semibold uppercase tracking-widest text-moos-600">
         {post.data.thema} · <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
       </p>
-      <h3 class="mt-2 text-xl leading-snug group-hover:text-wald-700">{post.data.title}</h3>
+      <h3 class="mt-2 text-xl leading-snug group-hover:text-wald-700">{trennen(post.data.title)}</h3>
       <p class="mt-2 line-clamp-3 text-sm leading-relaxed text-tinte/75">{post.data.description}</p>
     </div>
   </a>
