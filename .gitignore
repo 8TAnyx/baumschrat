@@ -68,3 +68,6 @@ bower_components
 # Astro
 .astro/
 .env
+
+# Originalfotos (unbearbeitet, mit Metadaten) – nicht ins öffentliche Repo
+meine-arbeit/
