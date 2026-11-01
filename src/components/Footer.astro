@@ -6,12 +6,11 @@ import logo from '../assets/site/logo.png';
 import { site, u } from '../data/site';
 
 const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
-const regionen = (await getCollection('regionen')).sort((a, b) => a.data.order - b.data.order);
 const year = new Date().getFullYear();
 ---
 
 <footer class="mt-auto bg-wald-950 pb-20 text-wald-100 md:pb-0">
-  <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
+  <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-3">
     <div>
       <a href={u('/')} class="flex items-center gap-2.5">
         <Image src={logo} alt="" width={40} height={50} class="h-10 w-auto brightness-0 invert" />
@@ -35,13 +34,6 @@ const year = new Date().getFullYear();
       <h2 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Leistungen</h2>
       <ul class="mt-4 space-y-2 text-sm">
         {leistungen.map((l) => <li><a href={u(`/leistungen/${l.id}/`)} class="hover:text-white">{l.data.kurz}</a></li>)}
-      </ul>
-    </div>
-
-    <div>
-      <h2 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Einsatzgebiet</h2>
-      <ul class="mt-4 space-y-2 text-sm">
-        {regionen.map((r) => <li><a href={u(`/einsatzgebiet/${r.id}/`)} class="hover:text-white">Baumpflege {r.data.name}</a></li>)}
       </ul>
     </div>
 

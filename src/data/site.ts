@@ -29,7 +29,6 @@ export const leistungsGruppen = [
 
 export const nav = [
   { href: '/leistungen/', label: 'Leistungen' },
-  { href: '/einsatzgebiet/', label: 'Einsatzgebiet' },
   { href: '/ratgeber/', label: 'Ratgeber' },
   { href: '/galerie/', label: 'Galerie' },
   { href: '/faq/', label: 'FAQ' },

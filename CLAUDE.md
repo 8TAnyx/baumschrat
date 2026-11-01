@@ -19,7 +19,7 @@ Astro is pinned to 7.4.0 because newer 7.4.x requires Node >= 22.23.4 and the lo
 
 ## Architecture
 
-- `src/content.config.ts` – three collections: `leistungen` (services), `ratgeber` (blog), `regionen` (service-area pages). Schemas are strict; build fails on missing fields.
+- `src/content.config.ts` – two collections: `leistungen` (services, grouped via `gruppe`) and `ratgeber` (blog). Schemas are strict; build fails on missing fields.
 - `src/data/site.ts` – company data, nav, and `u()` helper. **Every internal link must go through `u()`** so it works under the `/test/` base path. Markdown links are rewritten by `src/lib/rehype-base-links.mjs` (requires `@astrojs/markdown-remark`, since Astro 7's default Markdown processor doesn't run rehype plugins).
 - `src/layouts/Base.astro` – head/SEO, LocalBusiness JSON-LD on every page, header, footer, mobile action bar. Pages pass extra JSON-LD (Service, BlogPosting, FAQPage, BreadcrumbList) via `jsonLd`.
 - `src/components/ContactForm.astro` – multipart POST with photo upload; photos are downscaled client-side to 1800px before upload. Backend: `public/send_email.php` (honeypot, min fill time, per-IP rate limit, header-injection safe, MIME attachments).
