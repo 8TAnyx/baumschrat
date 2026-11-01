@@ -3,3 +3,10 @@
 RedirectMatch 301 ^(.*)/leistungen/(abtragungen|spezialfaellungen)/?$ $1/leistungen/sonderfaellung/
 RedirectMatch 301 ^(.*)/leistungen/baumschnitt/?$ $1/leistungen/baumpflege/
 RedirectMatch 301 ^(.*)/about/?$ $1/
+
+# HTML-Seiten immer neu prüfen lassen, damit nach einem Update keine alte Version aus dem Browser-Cache kommt.
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
