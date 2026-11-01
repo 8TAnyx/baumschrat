@@ -7,8 +7,8 @@ description: "Borkenkäfer im Garten in Graz und der Steiermark? Befallskontroll
 teaser: "Verdacht auf Borkenkäfer? Ich prüfe den Befall und fälle befallene Fichten rasch und sicher. Bei Befall ist keine Nachpflanzung nötig – das spart viel Geld."
 icon: "bug"
 order: 7
-image: "../../assets/fotos/abtragung-blick-garten.jpg"
-imageAlt: "Blick vom Wipfel einer gekürzten Fichte über Gärten und Dächer, das Seil im Vordergrund"
+image: "../../assets/fotos/borkenkaefer-frassbild.jpg"
+imageAlt: "Buchdrucker mit Larve in seinen Fraßgängen unter der Rinde einer Fichte"
 faq:
   - frage: "Muss ich nach der Fällung eines Borkenkäferbaums nachpflanzen?"
     antwort: "Nein. Bei Borkenkäferbefall besichtigt die Forstbehörde den Baum. Ordnet sie die Fällung an, ist für diesen Baum keine Nachpflanzung nötig – auch in Graz nicht. Sie sparen sich damit den Ersatzbaum, die Pflanzung und eine mögliche Ausgleichszahlung."
