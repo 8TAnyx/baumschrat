@@ -37,10 +37,13 @@ const business = {
   founder: { '@type': 'Person', name: site.owner },
   address: {
     '@type': 'PostalAddress',
+    streetAddress: site.street,
+    postalCode: site.zip,
     addressLocality: site.city,
     addressRegion: site.region,
     addressCountry: site.country,
   },
+  geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
   areaServed: site.areas.map((name) => ({ '@type': 'AdministrativeArea', name })),
   sameAs: [site.wkoUrl],
 };
