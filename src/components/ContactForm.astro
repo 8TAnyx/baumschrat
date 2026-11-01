@@ -157,7 +157,8 @@ const label = 'mb-1.5 block text-sm font-semibold text-wald-900';
       const res = await fetch(`${import.meta.env.BASE_URL.replace(/\/$/, '')}/send_email.php`, { method: 'POST', body: data });
       const result = await res.json().catch(() => ({ success: false }));
       if (result.success) {
-        form.querySelectorAll('input, textarea, select, button, label').forEach((el) => el.classList.add('hidden'));
+        // Alles außer der Erfolgsmeldung ausblenden – inline, weil Klassen wie `flex`/`grid` sonst `hidden` überstimmen
+        for (const el of Array.from(form.children)) if (el !== status) (el as HTMLElement).style.display = 'none';
         show('Danke für Ihre Anfrage! Ich melde mich in der Regel innerhalb von 24 Stunden bei Ihnen.', true);
         return;
       }
