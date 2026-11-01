@@ -44,7 +44,7 @@ const ld = [serviceLd, breadcrumbLd(crumbs, Astro.site!), ...(d.faq.length ? [fa
 ---
 
 <Base title={d.seoTitle} description={d.description} image={d.image} jsonLd={ld}>
-  <PageHero title={d.title} lead={d.teaser} crumbs={crumbs} image={d.image} imageAlt="">
+  <PageHero title={d.title} lead={d.teaser} crumbs={crumbs}>
     <div class="mt-8 flex flex-col gap-3 sm:flex-row">
       <a href={u(`/kontakt/?leistung=${entry.id}`)} class="btn-primary"><Icon name="camera" class="h-5 w-5" /> Angebot anfordern</a>
       <a href={site.phoneHref} class="btn-ghost"><Icon name="phone" class="h-5 w-5" /> {site.phone}</a>

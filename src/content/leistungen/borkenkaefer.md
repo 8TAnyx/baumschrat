@@ -7,8 +7,8 @@ description: "Borkenkäfer im Garten in Graz und Umgebung? Befallskontrolle, ras
 teaser: "Verdacht auf Borkenkäfer? Ich prüfe den Befall, fälle befallene Fichten rasch und sicher und unterstütze Sie im Kontakt mit den Behörden."
 icon: "bug"
 order: 7
-image: "../../assets/fotos/work-7.jpg"
-imageAlt: "Baumpfleger mit Helm in einer Baumkrone über dem Grazer Umland"
+image: "../../assets/fotos/abtragung-blick-garten.jpg"
+imageAlt: "Blick vom Wipfel einer gekürzten Fichte über Gärten und Dächer, das Seil im Vordergrund"
 faq:
   - frage: "Wie erkenne ich einen Borkenkäferbefall?"
     antwort: "Typische Anzeichen sind braunes Bohrmehl in Rindenritzen und am Stammfuß, kleine Einbohrlöcher, Harztröpfchen am Stamm, abfallende Rinde und Spechtabschläge. Eine rotbraun verfärbte Krone ist ein spätes Zeichen – dann haben die Käfer den Baum oft schon verlassen."

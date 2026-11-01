@@ -2,8 +2,8 @@
 title: "Borkenkäfer-Baum fällen in Graz: Forstbehörde, Anzeige und Ersatzpflanzung"
 date: 2026-11-01
 description: "Buchdrucker an der Gartenfichte? Ordnet die Forstbehörde die Fällung an, ist keine Ersatzpflanzung nötig. Wann trotzdem die Grazer Baumschutzverordnung gilt und wie Sie vorgehen."
-image: "../../assets/fotos/work-3.jpg"
-imageAlt: "Kletterausrüstung und Motorsäge an einem Holzgeländer vor einem Teich mit Trauerweide"
+image: "../../assets/fotos/abtragung-fichte-stamm.jpg"
+imageAlt: "Daniel Lindner an der Spitze eines entasteten Fichtenstamms bei der Fällung"
 thema: "Recht & Behörden"
 leistungen: ["borkenkaefer", "pflanzung", "baumfaellung"]
 ---

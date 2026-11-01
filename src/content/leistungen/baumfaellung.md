@@ -8,7 +8,7 @@ teaser: "Sichere Fällung inklusive Beratung zur Grazer Baumschutzverordnung, Au
 icon: "tree-pine"
 order: 5
 image: "../../assets/fotos/faellung-parkplatz-graz.jpg"
-imageAlt: "Gefällte Bäume und Stammstücke an einem Parkplatz in Graz, im Hintergrund die Hügel am Stadtrand"
+imageAlt: "Blick aus dem Baum auf gefällte und gekürzte Bäume an einem Parkplatz in Graz"
 faq:
   - frage: "Was kostet es, einen Baum fällen zu lassen?"
     antwort: "Der Preis hängt von Größe, Standort, Zugänglichkeit und Entsorgung ab. Nach einer kostenlosen Besichtigung – oder oft schon anhand von Fotos – bekommen Sie ein verbindliches Angebot."

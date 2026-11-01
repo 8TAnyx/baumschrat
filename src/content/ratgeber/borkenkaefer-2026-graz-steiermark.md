@@ -2,8 +2,8 @@
 title: "Borkenkäfer 2026: So ist die Lage in Graz und der Steiermark"
 date: 2026-10-20
 description: "Rund 500.000 Festmeter Schadholz, Schneebruch im Februar, ein trockener Sommer: Wie stark der Borkenkäfer 2026 in der Steiermark und rund um Graz zugeschlagen hat – und was das für Gartenbesitzer bedeutet."
-image: "../../assets/fotos/work-7.jpg"
-imageAlt: "Baumpfleger mit Helm in einer Baumkrone über dem Grazer Umland"
+image: "../../assets/fotos/work-1.jpg"
+imageAlt: "Daniel Lindner am verbliebenen Stamm einer Fichte vor blauem Himmel"
 thema: "Borkenkäfer"
 leistungen: ["borkenkaefer", "drohneninspektion", "sonderfaellung"]
 ---

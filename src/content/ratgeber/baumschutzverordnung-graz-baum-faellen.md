@@ -3,8 +3,8 @@ title: "Baum fällen in Graz: Was die Baumschutzverordnung erlaubt – und was n
 date: 2026-07-03
 updated: 2026-11-01
 description: "Ab welchem Stammumfang ist ein Baum in Graz geschützt, wer braucht eine Genehmigung und was kostet eine Fällung ohne Antrag? Der Überblick zur Grazer Baumschutzverordnung."
-image: "../../assets/fotos/work-3.jpg"
-imageAlt: "Kletterausrüstung und Motorsäge an einem Holzgeländer vor einem Teich mit Trauerweide"
+image: "../../assets/fotos/kletterer-efeustamm.jpg"
+imageAlt: "Daniel Lindner im Seil an einem efeubewachsenen Stamm bei der Fällung"
 thema: "Recht & Behörden"
 leistungen: ["baumfaellung", "sonderfaellung", "pflanzung"]
 ---
