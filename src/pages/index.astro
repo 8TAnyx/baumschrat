@@ -11,8 +11,7 @@ import { site, u } from '../data/site';
 import { faqAllgemein } from '../data/faq';
 import { faqLd } from '../data/seo';
 import heroImg from '../assets/fotos/work-9.jpg';
-import about1 from '../assets/fotos/portraet-winter.jpg';
-import about2 from '../assets/fotos/work-7.jpg';
+import aboutImg from '../assets/fotos/work-7.jpg';
 import etwLogo from '../assets/site/etw-logo.svg';
 
 const artikel = (await getCollection('ratgeber', (p) => !p.data.draft))
@@ -20,12 +19,6 @@ const artikel = (await getCollection('ratgeber', (p) => !p.data.draft))
   .slice(0, 3);
 const faq = faqAllgemein.slice(0, 5);
 
-const schritte = [
-  { titel: 'Anfrage', text: 'Rufen Sie an oder schicken Sie mir Fotos über das Formular.' },
-  { titel: 'Besichtigung', text: 'Ich sehe mir den Baum vor Ort an – kostenlos und unverbindlich.' },
-  { titel: 'Angebot', text: 'Sie bekommen ein klares Angebot und Infos zu nötigen Genehmigungen.' },
-  { titel: 'Ausführung', text: 'Sichere, saubere Arbeit – auf Wunsch inklusive Abtransport.' },
-];
 ---
 
 <Base
@@ -110,9 +103,8 @@ const schritte = [
   <!-- Über mich -->
   <section class="py-16 md:py-24" id="ueber-mich">
     <div class="container-page grid items-center gap-12 lg:grid-cols-2">
-      <div class="order-last grid grid-cols-2 gap-4 lg:order-first">
-        <Image src={about1} alt="Daniel Lindner mit Helm beim Klettern in einem verschneiten Bergtal" widths={[360, 600]} width={600} sizes="(min-width: 1024px) 280px, 45vw" class="aspect-[3/4] w-full rounded-3xl object-cover object-[30%_50%] shadow-lg" />
-        <Image src={about2} alt="Baumpfleger im Wipfel eines Baumes mit Blick über das Grazer Umland" widths={[360, 600]} width={600} sizes="(min-width: 1024px) 280px, 45vw" class="mt-10 aspect-[3/4] w-full rounded-3xl object-cover object-[20%_50%] shadow-lg" />
+      <div class="order-last lg:order-first">
+        <Image src={aboutImg} alt="Daniel Lindner im Wipfel eines Baumes mit Blick über das Grazer Umland" widths={[480, 800]} width={800} sizes="(min-width: 1024px) 560px, 100vw" class="aspect-[4/5] w-full rounded-3xl object-cover object-[20%_50%] shadow-lg sm:aspect-[4/3] lg:aspect-[4/5]" />
       </div>
       <div>
         <p class="eyebrow">Über mich</p>
@@ -145,25 +137,6 @@ const schritte = [
           }
         </ul>
       </div>
-    </div>
-  </section>
-
-  <!-- Ablauf -->
-  <section class="bg-white py-16 md:py-20">
-    <div class="container-page">
-      <p class="eyebrow">So einfach geht's</p>
-      <h2 class="mt-2 text-3xl md:text-4xl">In vier Schritten zum gepflegten Baum</h2>
-      <ol class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {
-          schritte.map((s, i) => (
-            <li class="relative rounded-2xl bg-papier p-6">
-              <span class="font-display text-5xl font-semibold text-wald-200">{i + 1}</span>
-              <h3 class="mt-2 text-xl">{s.titel}</h3>
-              <p class="mt-1 text-tinte/75">{s.text}</p>
-            </li>
-          ))
-        }
-      </ol>
     </div>
   </section>
 
