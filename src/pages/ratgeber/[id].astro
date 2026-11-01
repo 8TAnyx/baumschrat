@@ -40,6 +40,7 @@ const articleLd = {
   mainEntityOfPage: url,
   inLanguage: 'de-AT',
 };
+import { trennen } from '../../lib/trennen';
 ---
 
 <Base title={`${d.title} | Baumschrat`} description={d.description} image={d.image} type="article" jsonLd={[articleLd, breadcrumbLd(crumbs, Astro.site!)]}>
@@ -48,7 +49,7 @@ const articleLd = {
       <div class="container-page max-w-4xl py-12 md:py-16">
         <Breadcrumbs crumbs={crumbs.slice(0, 2)} light />
         <p class="eyebrow mt-6 !text-moos-400">{d.thema}</p>
-        <h1 class="mt-3 text-3xl leading-tight text-white md:text-5xl">{d.title}</h1>
+        <h1 class="mt-3 text-3xl leading-tight text-white md:text-5xl">{trennen(d.title)}</h1>
         <p class="mt-5 text-lg text-wald-100">{d.description}</p>
         <p class="mt-6 text-sm text-wald-200">
           Von {site.owner} · <time datetime={d.date.toISOString()}>{formatDate(d.date)}</time>

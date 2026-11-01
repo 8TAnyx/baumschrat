@@ -12,6 +12,7 @@ interface Props {
   imageAlt?: string;
 }
 const { title, lead, eyebrow, crumbs, image, imageAlt = '' } = Astro.props;
+import { trennen } from '../lib/trennen';
 ---
 
 <section class="relative overflow-hidden bg-wald-900">
@@ -26,7 +27,7 @@ const { title, lead, eyebrow, crumbs, image, imageAlt = '' } = Astro.props;
   <div class="container-page relative py-14 md:py-20">
     <Breadcrumbs crumbs={crumbs} light />
     {eyebrow && <p class="eyebrow mt-6 !text-moos-400">{eyebrow}</p>}
-    <h1 class="mt-3 max-w-3xl text-4xl text-white md:text-5xl">{title}</h1>
+    <h1 class="mt-3 max-w-3xl text-4xl text-white md:text-5xl">{trennen(title)}</h1>
     {lead && <p class="mt-5 max-w-2xl text-lg text-wald-100 md:text-xl">{lead}</p>}
     <slot />
   </div>
