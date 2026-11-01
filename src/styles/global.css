@@ -1,11 +1,10 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-@import '@fontsource-variable/inter';
-@import '@fontsource-variable/fraunces';
 
 @theme {
-  --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  /* Systemschrift wie auf der bisherigen Website – ohne Serifen, ohne Download */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: var(--font-sans);
 
   /* Waldgrün aus dem Logo */
   --color-wald-50: #eef5f1;
@@ -42,9 +41,8 @@
     @apply bg-papier font-sans text-tinte antialiased;
   }
   h1, h2, h3, h4 {
-    @apply font-display text-wald-900;
-    font-optical-sizing: auto;
-    letter-spacing: -0.01em;
+    @apply font-display font-bold text-wald-900;
+    letter-spacing: -0.02em;
     text-wrap: balance;
   }
   :focus-visible {
