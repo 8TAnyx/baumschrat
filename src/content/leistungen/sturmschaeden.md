@@ -6,7 +6,7 @@ seoTitle: "Sturmschaden Baum Graz – rasche Hilfe | Baumschrat"
 description: "Sturmschaden am Baum in Graz und Umgebung: rasche Sicherung angebrochener Bäume und Äste, Entfernung umgestürzter Bäume und Dokumentation für die Versicherung."
 teaser: "Angebrochener Ast, umgestürzter Baum, hängende Krone? Rasche Sicherung und Räumung – mit Dokumentation für die Versicherung."
 icon: "wind"
-order: 6
+order: 8
 image: "../../assets/fotos/work-5.jpg"
 imageAlt: "Ausleger einer Hubarbeitsbühne ragt in die Kronen hoher Laubbäume"
 faq:

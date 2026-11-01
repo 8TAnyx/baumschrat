@@ -10,7 +10,7 @@ import w9 from '../assets/fotos/work-9.jpg';
 
 // Neue Fotos: Datei nach src/assets/fotos/ legen, hier importieren und mit Beschreibung eintragen.
 export const galerie = [
-  { src: w1, alt: 'Spezialfällung: Baumkletterer am verbliebenen Stamm einer Fichte vor blauem Himmel' },
+  { src: w1, alt: 'Sonderfällung: Baumkletterer am verbliebenen Stamm einer Fichte vor blauem Himmel' },
   { src: w4, alt: 'Baumpflege in Seilklettertechnik in der Krone eines großen Laubbaums' },
   { src: w2, alt: 'Abtragung: Blick von oben auf ein abgeseiltes Stammstück über einem Garten' },
   { src: w7, alt: 'Im Wipfel mit Blick über das Grazer Umland' },

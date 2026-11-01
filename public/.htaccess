@@ -1,5 +1,5 @@
 # 301-Weiterleitungen von URLs der alten Hugo-Website, damit Google-Rankings und Links erhalten bleiben.
 # `^(.*)` fängt einen Basis-Pfad ab (z. B. /test), damit die Regeln auch auf der Testumgebung greifen.
-RedirectMatch 301 ^(.*)/leistungen/(abtragungen|spezialfaellungen)/?$ $1/leistungen/baumfaellung/
+RedirectMatch 301 ^(.*)/leistungen/(abtragungen|spezialfaellungen)/?$ $1/leistungen/sonderfaellung/
 RedirectMatch 301 ^(.*)/leistungen/baumschnitt/?$ $1/leistungen/baumpflege/
 RedirectMatch 301 ^(.*)/about/?$ $1/
