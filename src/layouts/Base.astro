@@ -86,10 +86,10 @@ const ld = [business, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])];
 
     <!-- Fixe Aktionsleiste am Handy -->
     <div class="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-px border-t border-wald-800 bg-wald-800 md:hidden" style="padding-bottom: env(safe-area-inset-bottom)">
-      <a href={site.phoneHref} class="flex items-center justify-center gap-2 whitespace-nowrap bg-wald-700 py-3.5 text-sm font-semibold text-white min-[360px]:text-base">
+      <a href={site.phoneHref} class="flex items-center justify-center gap-2 bg-wald-700 py-3.5 font-semibold text-white">
         <Icon name="phone" class="h-5 w-5" /> Anrufen
       </a>
-      <a href={u('/kontakt/')} class="flex items-center justify-center gap-2 whitespace-nowrap bg-rinde-600 py-3.5 text-sm font-semibold text-white min-[360px]:text-base">
+      <a href={u('/kontakt/')} class="flex items-center justify-center gap-2 bg-rinde-600 py-3.5 font-semibold text-white">
         <Icon name="camera" class="h-5 w-5" /> Anfrage mit Foto
       </a>
     </div>

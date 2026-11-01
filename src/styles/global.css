@@ -44,16 +44,6 @@
     @apply font-display font-bold text-wald-900;
     letter-spacing: -0.02em;
     text-wrap: balance;
-    /* Lange deutsche Wörter (z. B. „Schadholzentfernung“) am Handy trennen statt abschneiden */
-    hyphens: auto;
-    overflow-wrap: break-word;
-  }
-  /* Breite Tabellen im Fließtext am Handy seitlich scrollbar machen statt die ganze Seite zu verbreitern */
-  @media (max-width: 40rem) {
-    .prose-baum table {
-      display: block;
-      overflow-x: auto;
-    }
   }
   :focus-visible {
     outline: 3px solid var(--color-rinde-500);
@@ -87,6 +77,4 @@
     prose-headings:font-display prose-headings:text-wald-900
     prose-a:text-wald-700 prose-a:underline-offset-2 hover:prose-a:text-rinde-600
     prose-strong:text-wald-900 prose-li:marker:text-moos-600;
-  hyphens: auto;
-  overflow-wrap: break-word;
 }
