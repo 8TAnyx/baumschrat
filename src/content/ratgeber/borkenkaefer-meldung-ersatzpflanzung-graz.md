@@ -1,6 +1,6 @@
 ---
 title: "Borkenkäfer-Baum fällen in Graz: Forstbehörde, Anzeige und Ersatzpflanzung"
-date: 2026-11-01
+date: 2026-06-18
 description: "Buchdrucker an der Gartenfichte? Ordnet die Forstbehörde die Fällung an, ist keine Ersatzpflanzung nötig. Wann trotzdem die Grazer Baumschutzverordnung gilt und wie Sie vorgehen."
 image: "../../assets/fotos/abtragung-fichte-stamm.jpg"
 imageAlt: "Daniel Lindner an der Spitze eines entasteten Fichtenstamms bei der Fällung"
@@ -71,6 +71,6 @@ Das Steiermärkische Baumschutzgesetz und damit die Grazer Verordnung gelten **n
 
 Ich bestätige und dokumentiere den Befall mit Fotos, messe den Stammumfang, kläre mit Ihnen, ob die Forstbehörde zuständig ist, prüfe, ob anrechenbare Jungbäume vorhanden sind, und fälle den Baum sicher – auch dort, wo er direkt am Haus steht. Mehr unter [Borkenkäfer-Hilfe](/leistungen/borkenkaefer/).
 
-*Dieser Artikel gibt den Stand der Grazer Baumschutzverordnung und des Steiermärkischen Baumschutzgesetzes und des Forstgesetzes vom November 2026 wieder und ersetzt keine Rechtsberatung. Verbindliche Auskünfte erteilen die Forstbehörde und die Abteilung für Grünraum und Gewässer der Stadt Graz.*
+*Dieser Artikel gibt den Stand der Grazer Baumschutzverordnung und des Steiermärkischen Baumschutzgesetzes und des Forstgesetzes im Jahr 2026 wieder und ersetzt keine Rechtsberatung. Verbindliche Auskünfte erteilen die Forstbehörde und die Abteilung für Grünraum und Gewässer der Stadt Graz.*
 
 **Quellen:** [RIS – Grazer Baumschutzverordnung](https://www.ris.bka.gv.at/Dokumente/Gemeinderecht/GEMRE_ST_60101_A17_NSV_148809_2023_0008/GEMRE_ST_60101_A17_NSV_148809_2023_0008.html), [RIS – Steiermärkisches Baumschutzgesetz 1989](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrStmk&Gesetzesnummer=20000912), [Stadt Graz – Baumschutz & Baumfällung](https://www.graz.at/cms/beitrag/10214064/15111570/Baumschutz_Baumfaellung.html), [RIS – Forstgesetz 1975, §§ 43–45 (Forstschutz)](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10010371)

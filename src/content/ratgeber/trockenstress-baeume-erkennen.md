@@ -1,6 +1,6 @@
 ---
 title: "Trockenstress bei Bäumen: Warnzeichen erkennen, bevor es zu spät ist"
-date: 2026-08-05
+date: 2026-10-31
 description: "Nach einem schneearmen Winter und langen Trockenphasen zeigen 2026 viele Bäume in der Steiermark deutliche Stresssymptome. Welche Warnzeichen Sie jetzt an Ahorn, Linde, Buche und Erle erkennen sollten."
 image: "../../assets/fotos/kletterer-kiefer.jpg"
 imageAlt: "Daniel Lindner im Seil an einer hohen Kiefer"

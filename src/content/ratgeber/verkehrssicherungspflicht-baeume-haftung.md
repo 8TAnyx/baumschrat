@@ -1,6 +1,6 @@
 ---
 title: "Haftung bei Baumschäden: Was Grundstückseigentümer in der Steiermark wissen müssen"
-date: 2026-06-29
+date: 2026-04-20
 description: "Fällt ein Ast oder ein ganzer Baum auf ein Nachbargrundstück, haftet meist der Baumbesitzer. Was die Verkehrssicherungspflicht in Österreich konkret bedeutet und wie Sie sich absichern."
 image: "../../assets/fotos/kernfaeule-querschnitt.jpg"
 imageAlt: "Querschnitt eines Stammstücks mit ausgeprägter Kernfäule"

@@ -1,6 +1,6 @@
 ---
 title: "Sturmschäden 2026: Warum beschädigte Fichten jetzt schnell entfernt werden müssen"
-date: 2026-06-22
+date: 2026-09-20
 description: "Nach den Stürmen und Unwettern des Jahres 2026 liegt in der Steiermark viel Schadholz. Warum beschädigte Fichten jetzt zügig entfernt werden sollten und wie das mit der Borkenkäfer-Gefahr zusammenhängt."
 image: "../../assets/fotos/rigging-stammstueck.jpg"
 imageAlt: "Angeschlagenes Stammstück hängt beim Abseilen im Baum"
