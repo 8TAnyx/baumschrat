@@ -8,7 +8,7 @@ teaser: "Kroneninspektion aus der Luft: Schäden in großen, schwer zugängliche
 icon: "drone"
 order: 4
 image: "../../assets/fotos/work-8.jpg"
-imageAlt: "Blick aus einer Baumkrone über die Dächer von Graz"
+imageAlt: "Blick aus einer Baumkrone über das Grazer Umland"
 faq:
   - frage: "Ersetzt die Drohne eine Baumkontrolle?"
     antwort: "Nein, sie ergänzt sie. Die Drohne liefert detaillierte Bilder aus der Krone, die vom Boden aus nicht sichtbar sind. Die fachliche Bewertung, ob ein Schaden kritisch ist, mache ich – kombiniert mit der Kontrolle von Stammfuß und Stamm am Boden."

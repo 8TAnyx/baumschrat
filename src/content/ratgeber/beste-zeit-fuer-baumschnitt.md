@@ -2,8 +2,8 @@
 title: "Wann ist die beste Zeit für Baumschnitt?"
 date: 2026-08-07
 description: "Erfahren Sie, wann der optimale Zeitpunkt für den Rückschnitt Ihrer Bäume ist und worauf Sie dabei achten sollten."
-image: "../../assets/fotos/work-4.jpg"
-imageAlt: "Baumpfleger in Seilklettertechnik in der Krone eines großen Laubbaums"
+image: "../../assets/fotos/work-6.jpg"
+imageAlt: "Rückschnitt eines Starkastes mit der Motorsäge, gesichert im Seil"
 thema: "Baumpflege"
 leistungen: ["baumpflege"]
 ---

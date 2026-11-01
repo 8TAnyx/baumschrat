@@ -7,8 +7,8 @@ description: "Baumkontrolle in Graz nach ÖNORM L 1122: dokumentierte Sichtkontr
 teaser: "Dokumentierte Sichtkontrolle Ihrer Bäume – für Ihre Verkehrssicherungspflicht und ruhigen Schlaf beim nächsten Sturm."
 icon: "clipboard"
 order: 3
-image: "../../assets/fotos/work-9.jpg"
-imageAlt: "Baumpfleger bei der Kontrolle eines Baumes, im Hintergrund ein Schloss"
+image: "../../assets/fotos/pilz-am-stamm.jpg"
+imageAlt: "Baumpilz und Rindenriss an einem Laubbaumstamm – typischer Befund bei der Baumkontrolle"
 faq:
   - frage: "Wie oft müssen Bäume kontrolliert werden?"
     antwort: "Wie oft kontrolliert werden muss, hängt vom Zustand des Baumes und vom Standort ab – ein alter Baum neben einem Gehweg braucht mehr Aufmerksamkeit als ein junger Baum mitten im Garten. In der Praxis wird mindestens eine jährliche Sichtkontrolle empfohlen, zusätzlich nach Stürmen oder starkem Schneefall."

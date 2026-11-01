@@ -2,8 +2,8 @@
 title: "Borkenkäferbefall erkennen: Die wichtigsten Anzeichen an Ihrer Fichte"
 date: 2026-10-27
 description: "Bohrmehl, Einbohrlöcher, Harztropfen, Spechtabschläge: So erkennen Sie einen Borkenkäferbefall an Fichten im Garten früh genug – und was Sie dann tun sollten."
-image: "../../assets/fotos/work-1.jpg"
-imageAlt: "Baumkletterer am verbliebenen Stamm einer Fichte vor blauem Himmel"
+image: "../../assets/fotos/borkenkaefer-frassbild.jpg"
+imageAlt: "Buchdrucker mit Larve in seinen Fraßgängen unter der Rinde einer Fichte"
 thema: "Borkenkäfer"
 leistungen: ["borkenkaefer", "baumkontrolle", "drohneninspektion"]
 ---

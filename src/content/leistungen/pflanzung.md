@@ -7,8 +7,8 @@ description: "Ersatzpflanzung nach der Grazer Baumschutzverordnung: passende Bau
 teaser: "Ersatzbaum vorgeschrieben? Ich wähle mit Ihnen die passende Art, pflanze fachgerecht und unterstütze Sie bei der Meldung an die Stadt."
 icon: "tree-deciduous"
 order: 2
-image: "../../assets/fotos/kletterer-kiefer.jpg"
-imageAlt: "Daniel Lindner im Seil an einer hohen Kiefer zwischen Laubbäumen"
+image: "../../assets/fotos/portraet-winter.jpg"
+imageAlt: "Daniel Lindner mit Helm und Seil in einem verschneiten Bergtal"
 faq:
   - frage: "Wie groß muss ein Ersatzbaum in Graz sein?"
     antwort: "Laut Grazer Baumschutzverordnung muss ein Ersatzbaum einen Stammumfang von mindestens 16/18 cm haben, gemessen in 1 m Höhe. Bei bestimmten langsam wachsenden Arten genügen 14/16 cm."

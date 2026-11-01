@@ -5,7 +5,7 @@ import PageHero from '../../components/PageHero.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { breadcrumbLd } from '../../data/seo';
-import img from '../../assets/fotos/work-8.jpg';
+import img from '../../assets/fotos/kletterausruestung-krone.jpg';
 
 const artikel = (await getCollection('ratgeber', (p) => !p.data.draft)).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const themen = [...new Set(artikel.map((a) => a.data.thema))];

@@ -8,7 +8,7 @@ teaser: "Kronenpflege, Totholzentfernung und Lichtraumprofil – fachgerecht nac
 icon: "scissors"
 order: 1
 image: "../../assets/fotos/work-4.jpg"
-imageAlt: "Baumpfleger in Seilklettertechnik in der Krone eines großen Laubbaums"
+imageAlt: "Daniel Lindner in Seilklettertechnik in der Krone eines großen Laubbaums"
 faq:
   - frage: "Was bedeutet Baumpflege nach ÖNORM L 1122?"
     antwort: "Die ÖNORM L 1122 ist die österreichische Norm für Baumkontrolle und Baumpflege. Sie beschreibt, welche Schnittmaßnahmen fachgerecht sind, wie stark eingegriffen werden darf und wie Bäume zu kontrollieren sind. Arbeiten nach dieser Norm erhalten die Vitalität des Baumes und sind im Streitfall nachvollziehbar dokumentiert."
