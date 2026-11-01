@@ -17,7 +17,7 @@ faq:
   - frage: "Ab wann ist ein Baum in Graz geschützt?"
     antwort: "Laut Grazer Baumschutzverordnung sind Laub- und Nadelbäume ab einem Stammumfang von 50 cm, gemessen in 1 m Höhe, geschützt; bestimmte langsam wachsende Arten schon ab 25 cm. Klassische Obstbäume sind ausgenommen, Nussbäume und Edelkastanien jedoch nicht."
   - frage: "Muss ich nach der Fällung einen neuen Baum pflanzen?"
-    antwort: "Bei geschützten Bäumen schreibt die Stadt Graz in der Regel eine Ersatzpflanzung vor. Wer die Fällung vorher anzeigt, kommt meist mit einem Ersatzbaum pro gefälltem Baum aus – ohne Anzeige richtet sich die Zahl nach dem Stammumfang und es droht eine Strafe."
+    antwort: "Bei geschützten Bäumen schreibt die Stadt Graz in der Regel eine Ersatzpflanzung vor – wer vorher anzeigt, kommt meist mit einem Ersatzbaum pro Baum aus. Keine Ersatzpflanzung ist nötig, wenn die Entfernung behördlich angeordnet wird, etwa von der Forstbehörde bei Borkenkäferbefall."
   - frage: "Wie lange dauert eine Abtragung?"
     antwort: "Ein mittelgroßer Baum im Hausgarten ist meist an einem Tag erledigt – inklusive Aufräumen. Nach der Besichtigung bekommen Sie eine konkrete Einschätzung."
 ---

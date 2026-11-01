@@ -57,7 +57,7 @@ Erst grüne Nadeln am Boden, dann eine gelbliche, schließlich rotbraune Krone. 
 1. **Nicht abwarten.** Ein befallener Baum erholt sich nicht. Je früher er fällt, desto weniger Käfer fliegen aus.
 2. **Holz und Rinde vom Grundstück.** Das befallene Holz nicht als Brennholz mit Rinde neben der Hecke stapeln – sonst fliegen die Käfer trotzdem aus.
 3. **Nachbarn informieren.** Stehen in der Umgebung weitere Fichten, sollten auch diese kontrolliert werden.
-4. **In Graz: vorher anzeigen.** Auch befallene Bäume bleiben nach der Grazer Baumschutzverordnung geschützt. Warum sich die Meldung finanziell lohnt, lesen Sie in [Borkenkäfer-Baum fällen in Graz](/ratgeber/borkenkaefer-meldung-ersatzpflanzung-graz/).
+4. **In Graz: Zuständigkeit klären.** Bei Buchdrucker-Befall an Fichten ist die Forstbehörde zuständig – ordnet sie die Entfernung an, ist keine Ersatzpflanzung nötig. Ohne Anordnung bleibt der Baum nach der Grazer Baumschutzverordnung geschützt und muss vorher angezeigt werden. Details in [Borkenkäfer-Baum fällen in Graz](/ratgeber/borkenkaefer-meldung-ersatzpflanzung-graz/).
 
 Sie sind unsicher, ob Ihre Fichte befallen ist? Schicken Sie mir Fotos von Stammfuß, Rinde und Krone über das [Kontaktformular](/kontakt/) – oft lässt sich schon daraus abschätzen, ob ein Besuch nötig ist.
 
