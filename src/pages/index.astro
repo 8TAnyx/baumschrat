@@ -13,6 +13,7 @@ import { faqLd } from '../data/seo';
 import heroImg from '../assets/fotos/work-9.jpg';
 import about1 from '../assets/fotos/portraet-winter.jpg';
 import about2 from '../assets/fotos/work-7.jpg';
+import etwLogo from '../assets/site/etw-logo.svg';
 
 const artikel = (await getCollection('ratgeber', (p) => !p.data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -58,12 +59,15 @@ const schritte = [
           <a href={u('/kontakt/')} class="btn-primary"><Icon name="camera" class="h-5 w-5" /> Kostenloses Angebot</a>
           <a href={site.phoneHref} class="btn-ghost"><Icon name="phone" class="h-5 w-5" /> {site.phone}</a>
         </div>
-        <ul class="mt-8 grid gap-2 text-sm text-wald-100 sm:grid-cols-2">
-          <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> European Tree Worker (ETW)</li>
+        <ul class="mt-8 grid gap-2 text-sm text-wald-100 sm:grid-cols-3">
           <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Arbeit nach ÖNORM</li>
           <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Besichtigung gratis</li>
           <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Antwort in 24 h</li>
         </ul>
+        <div class="mt-8 flex items-center gap-3">
+          <Image src={etwLogo} alt="Logo European Tree Worker (EAC)" width={64} height={64} class="h-16 w-16" />
+          <span class="text-sm leading-tight text-wald-100"><strong class="block text-white">Zertifizierter European Tree Worker</strong>Europäisches Zertifikat für Baumpfleger</span>
+        </div>
       </div>
     </div>
   </section>
@@ -120,6 +124,10 @@ const schritte = [
           <p>
             Mein Einsatzgebiet umfasst das gesamte Grazer Stadtgebiet, Graz-Umgebung und reicht bis ins Mürztal. Dabei lege ich besonderen Wert auf Sicherheit, Baumschutz und ehrliche Beratung.
           </p>
+        </div>
+        <div class="mt-6 flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-wald-100">
+          <Image src={etwLogo} alt="Logo European Tree Worker (EAC)" width={72} height={72} class="h-18 w-18 shrink-0" />
+          <p class="text-sm text-tinte/75"><strong class="block text-base text-wald-900">European Tree Worker (ETW)</strong>Zertifiziert nach den Standards des European Arboricultural Council (EAC) – für fachgerechte, sichere Arbeit an und in Bäumen.</p>
         </div>
         <ul class="mt-8 grid gap-4 sm:grid-cols-2">
           {
