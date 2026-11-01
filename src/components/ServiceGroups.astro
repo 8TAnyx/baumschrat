@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import { leistungsGruppen, u } from '../data/site';
+import Icon from './Icon.astro';
+
+const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+  {
+    leistungsGruppen.map((g) => (
+      <section class="card flex flex-col p-5">
+        <h3 class="text-xl">{g.label}</h3>
+        <p class="mt-1 text-sm text-tinte/65">{g.text}</p>
+        <ul class="mt-4 flex flex-1 flex-col gap-2">
+          {leistungen
+            .filter((s) => s.data.gruppe === g.id)
+            .map((s) => (
+              <li>
+                <a href={u(`/leistungen/${s.id}/`)} class="group flex items-start gap-3 rounded-xl p-2 -mx-2 hover:bg-wald-50">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-wald-50 text-wald-700 group-hover:bg-wald-700 group-hover:text-white">
+                    <Icon name={s.data.icon} class="h-5 w-5" />
+                  </span>
+                  <span class="min-w-0">
+                    <strong class="flex items-center gap-1 text-wald-900 group-hover:text-rinde-600">
+                      {s.data.kurz} <Icon name="arrow-right" class="h-4 w-4 opacity-0 transition group-hover:opacity-100" />
+                    </strong>
+                    <span class="line-clamp-3 text-sm leading-snug text-tinte/70">{s.data.teaser}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+        </ul>
+      </section>
+    ))
+  }
+</div>

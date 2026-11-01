@@ -11,6 +11,8 @@ const leistungen = defineCollection({
       title: z.string(),
       // Kurzer Name für Navigation und Karten, z. B. "Baumpflege"
       kurz: z.string(),
+      // Gruppe auf Startseite und Übersicht, siehe `leistungsGruppen` in src/data/site.ts
+      gruppe: z.enum(['pflegen', 'pruefen', 'faellen', 'schaeden']),
       // Seitentitel für Google (ca. 50–60 Zeichen)
       seoTitle: z.string(),
       description: z.string(),

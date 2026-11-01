@@ -1,13 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
-import ServiceCard from '../../components/ServiceCard.astro';
+import ServiceGroups from '../../components/ServiceGroups.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { breadcrumbLd } from '../../data/seo';
 import img from '../../assets/fotos/work-4.jpg';
 
-const leistungen = (await getCollection('leistungen')).sort((a, b) => a.data.order - b.data.order);
 const crumbs = [
   { label: 'Start', href: '/' },
   { label: 'Leistungen', href: '/leistungen/' },
@@ -29,8 +27,8 @@ const crumbs = [
     imageAlt=""
   />
   <section class="py-16">
-    <div class="container-page grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-      {leistungen.map((s) => <ServiceCard service={s} />)}
+    <div class="container-page">
+      <ServiceGroups />
     </div>
   </section>
   <CtaBand />

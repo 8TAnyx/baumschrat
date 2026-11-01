@@ -29,7 +29,7 @@ Für Grundstücksbesitzer heißt das konkret:
 
 ## Sicher entfernen statt riskieren
 
-Sturmgeschädigte Bäume verhalten sich beim Fällen oft unberechenbar: Spannungen im Holz, angebrochene Kronen oder unterspülte Wurzelteller machen eine klassische Fällung häufig unmöglich. Hier kommen [Spezialfällungen](/leistungen/spezialfaellungen/) mit Klettertechnik oder eine kontrollierte [Abtragung](/leistungen/abtragungen/) in Teilstücken zum Einsatz – gerade dort, wo der Baum zu nah an Haus, Zaun oder Nachbargrundstück steht, um ihn einfach in eine Richtung zu fällen.
+Sturmgeschädigte Bäume verhalten sich beim Fällen oft unberechenbar: Spannungen im Holz, angebrochene Kronen oder unterspülte Wurzelteller machen eine klassische Fällung häufig unmöglich. Hier kommen [Spezialfällungen mit Klettertechnik oder eine kontrollierte Abtragung in Teilstücken](/leistungen/baumfaellung/) zum Einsatz – gerade dort, wo der Baum zu nah an Haus, Zaun oder Nachbargrundstück steht, um ihn einfach in eine Richtung zu fällen.
 
 Sie haben nach einem der Unwetter dieses Jahres einen beschädigten Baum auf Ihrem Grundstück? Warten Sie nicht, bis daraus ein Sicherheits- oder Käferproblem wird. Kontaktieren Sie mich für eine rasche Einschätzung vor Ort.
 

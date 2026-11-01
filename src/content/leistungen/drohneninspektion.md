@@ -1,5 +1,6 @@
 ---
 title: "Drohnen-Baumprüfung"
+gruppe: "pruefen"
 kurz: "Drohnen-Baumprüfung"
 seoTitle: "Drohnen-Baumprüfung & Kroneninspektion Graz | Baumschrat"
 description: "Baumprüfung mit der Drohne in Graz: Kroneninspektion hoher und schwer zugänglicher Bäume, Schadensdokumentation nach Sturm – ohne Klettern und ohne Hubarbeitsbühne."

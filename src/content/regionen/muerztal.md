@@ -14,7 +14,7 @@ Das Mürztal ist Fichtenland: Steile Hänge, Grundstücke direkt am Wald und vie
 
 ## Typische Aufgaben im Mürztal
 
-**Fichten am Haus.** Über Jahrzehnte gewachsene Fichten stehen oft gefährlich nah an Dach und Leitung. Mit [Spezialfällung](/leistungen/spezialfaellungen/) und [Abtragung](/leistungen/abtragungen/) entferne ich sie Stück für Stück, ohne dass etwas zu Schaden kommt.
+**Fichten am Haus.** Über Jahrzehnte gewachsene Fichten stehen oft gefährlich nah an Dach und Leitung. Mit [Spezialfällung und Abtragung](/leistungen/baumfaellung/) entferne ich sie Stück für Stück, ohne dass etwas zu Schaden kommt.
 
 **Schneebruch.** Nasser, schwerer Schnee bricht Wipfel und Äste – und die Schäden zeigen sich oft erst im Frühjahr. Eine [Baumkontrolle](/leistungen/baumkontrolle/) nach dem Winter oder eine [Drohnen-Baumprüfung](/leistungen/drohneninspektion/) der Krone schafft Klarheit.
 
