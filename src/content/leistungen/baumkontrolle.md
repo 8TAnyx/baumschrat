@@ -6,7 +6,7 @@ seoTitle: "Baumkontrolle Graz nach ÖNORM L 1122 | Baumschrat"
 description: "Baumkontrolle in Graz nach ÖNORM L 1122: dokumentierte Sichtkontrolle zur Verkehrssicherheit für Private, Hausverwaltungen und Gemeinden – mit Maßnahmenempfehlung."
 teaser: "Dokumentierte Sichtkontrolle Ihrer Bäume – für Ihre Verkehrssicherungspflicht und ruhigen Schlaf beim nächsten Sturm."
 icon: "clipboard"
-order: 2
+order: 3
 image: "../../assets/fotos/work-9.jpg"
 imageAlt: "Baumpfleger bei der Kontrolle eines Baumes, im Hintergrund ein Schloss"
 faq:

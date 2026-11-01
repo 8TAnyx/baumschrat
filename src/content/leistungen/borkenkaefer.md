@@ -6,7 +6,7 @@ seoTitle: "Borkenkäfer Graz – Befall prüfen & Fichte fällen | Baumschrat"
 description: "Borkenkäfer im Garten in Graz und Umgebung? Befallskontrolle, rasche Fällung befallener Fichten, Abtransport des Schadholzes und Unterstützung im Kontakt mit den Behörden."
 teaser: "Verdacht auf Borkenkäfer? Ich prüfe den Befall, fälle befallene Fichten rasch und sicher und unterstütze Sie im Kontakt mit den Behörden."
 icon: "bug"
-order: 5
+order: 7
 image: "../../assets/fotos/work-7.jpg"
 imageAlt: "Baumpfleger mit Helm in einer Baumkrone über dem Grazer Umland"
 faq:
@@ -23,7 +23,7 @@ Der **Borkenkäfer** – in unseren Breiten vor allem der Buchdrucker und der Ku
 ## Was ich für Sie tue
 
 - **Befallskontrolle:** Ich prüfe verdächtige Fichten auf Bohrmehl, Einbohrlöcher, Harzfluss und Brutbild unter der Rinde – bei hohen Bäumen auch per [Drohne](/leistungen/drohneninspektion/).
-- **Rasche Fällung:** Befallene Bäume entferne ich zügig, auch an schwierigen Standorten per [Spezialfällung](/leistungen/baumfaellung/).
+- **Rasche Fällung:** Befallene Bäume entferne ich zügig, auch an schwierigen Standorten per [Sonderfällung](/leistungen/sonderfaellung/).
 - **Schadholz vom Grundstück:** Rinde und Holz werden abtransportiert, damit keine Käfer ausfliegen.
 - **Dokumentation für die Behörde:** Fotos, Stammumfang und Befund – die Grundlage für die Forstbehörde oder für Ihre Anzeige nach der Grazer Baumschutzverordnung.
 - **Nachbarbäume im Blick:** Gesunde Fichten in der Umgebung kontrolliere ich mit, damit der Befall nicht weiterzieht.

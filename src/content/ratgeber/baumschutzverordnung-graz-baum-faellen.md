@@ -6,7 +6,7 @@ description: "Ab welchem Stammumfang ist ein Baum in Graz geschützt, wer brauch
 image: "../../assets/fotos/work-3.jpg"
 imageAlt: "Kletterausrüstung und Motorsäge an einem Holzgeländer vor einem Teich mit Trauerweide"
 thema: "Recht & Behörden"
-leistungen: ["baumfaellung"]
+leistungen: ["baumfaellung", "sonderfaellung", "pflanzung"]
 ---
 
 "Das ist doch mein eigener Baum, den kann ich fällen, wann ich will" – dieser Satz führt in Graz schneller zu einer Strafe als man denkt.
@@ -38,6 +38,6 @@ Droht unmittelbare Gefahr für Menschen – etwa weil ein angebrochener Baum auf
 - Genügend zeitlichen Puffer einplanen – die Behörde hat acht Wochen Zeit
 - Bei der Antragstellung kann eine fachliche Einschätzung (z. B. zur Verkehrssicherheit) den Prozess beschleunigen
 
-Ich unterstütze Sie gerne bei der fachlichen Einschätzung Ihres Baumes und bei der Vorbereitung des Antrags – von der ersten Begutachtung bis zur fachgerechten [Fällung oder Abtragung](/leistungen/baumfaellung/), wenn die Genehmigung erteilt wurde.
+Ich unterstütze Sie gerne bei der fachlichen Einschätzung Ihres Baumes und bei der Vorbereitung des Antrags – von der ersten Begutachtung bis zur fachgerechten [Fällung](/leistungen/baumfaellung/) oder [Abtragung](/leistungen/sonderfaellung/), wenn die Genehmigung erteilt wurde – und auf Wunsch bis zur [Ersatzpflanzung](/leistungen/pflanzung/).
 
 **Quellen:** [RIS – Steiermärkisches Baumschutzgesetz 1989](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrStmk&Gesetzesnummer=20000912), [Stadt Graz – Baumschutz & Baumfällung](https://www.graz.at/cms/beitrag/10214064/15111570/Baumschutz_Baumfaellung.html), [RIS – Grazer Baumschutzverordnung (Rechtsinformationssystem des Bundes)](https://www.ris.bka.gv.at/Dokumente/Gemeinderecht/GEMRE_ST_60101_A17_NSV_148809_2023_0008/GEMRE_ST_60101_A17_NSV_148809_2023_0008.html)

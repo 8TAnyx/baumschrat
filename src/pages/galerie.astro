@@ -16,11 +16,11 @@ const bilder = await Promise.all(galerie.map(async (b) => ({ ...b, gross: await 
 
 <Base
   title="Galerie: Baumarbeiten in Graz in Bildern | Baumschrat"
-  description="Einblicke in Baumpflege, Spezialfällungen und Abtragungen mit Seilklettertechnik in Graz und Umgebung – Fotos aus der Arbeit von Baumschrat."
+  description="Einblicke in Baumpflege, Sonderfällungen und Abtragungen mit Seilklettertechnik in Graz und Umgebung – Fotos aus der Arbeit von Baumschrat."
   image={galerie[0].src}
   jsonLd={breadcrumbLd(crumbs, Astro.site!)}
 >
-  <PageHero title="Unsere Arbeit in Bildern" lead="Einblicke in Baumpflege, Spezialfällungen und Abtragungen in Graz und Umgebung." eyebrow="Galerie" crumbs={crumbs} />
+  <PageHero title="Unsere Arbeit in Bildern" lead="Einblicke in Baumpflege, Sonderfällungen und Abtragungen in Graz und Umgebung." eyebrow="Galerie" crumbs={crumbs} />
   <section class="py-14 md:py-20">
     <div class="container-page columns-1 gap-4 sm:columns-2 lg:columns-3">
       {

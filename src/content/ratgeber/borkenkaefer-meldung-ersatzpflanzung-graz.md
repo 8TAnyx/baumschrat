@@ -5,7 +5,7 @@ description: "Buchdrucker an der Gartenfichte? Ordnet die Forstbehörde die Fäl
 image: "../../assets/fotos/work-3.jpg"
 imageAlt: "Kletterausrüstung und Motorsäge an einem Holzgeländer vor einem Teich mit Trauerweide"
 thema: "Recht & Behörden"
-leistungen: ["borkenkaefer", "baumfaellung"]
+leistungen: ["borkenkaefer", "pflanzung", "baumfaellung"]
 ---
 
 „Der Baum ist doch eh schon tot – den kann ich einfach umschneiden.“ Diesen Satz hört man bei Borkenkäferbäumen oft. In Graz ist das nicht ganz so einfach – aber oft günstiger als befürchtet. Entscheidend ist, **welche Behörde zuständig ist**: Bei einer Fichte mit Buchdrucker-Befall ist das in erster Linie die **Forstbehörde**, nicht die Baumschutzabteilung der Stadt.
@@ -45,7 +45,7 @@ Die Verordnung sieht in § 5 Abs. 6 eine Möglichkeit vor, die viele nicht kenne
 
 Gerade an Waldrandgrundstücken wachsen oft junge Ahorne, Eschen oder Buchen nach – die können Ihnen die Ersatzpflanzung ersparen. **Mit Anzeige ist das am leichtesten zu erreichen:** Weil nur ein Ersatzbaum pro Baum vorgeschrieben wird, reicht schon ein passender Jungbaum. Ohne Anzeige wird die Ersatzpflanzung nach dem Stammumfang bemessen, und für jeden fehlenden Jungbaum muss nachgepflanzt werden (§ 5 Abs. 7).
 
-Kann eine vorgeschriebene Ersatzpflanzung nachweislich nicht erfüllt werden, etwa weil kein Platz ist, ist stattdessen eine Ausgleichszahlung zu leisten. Auch darüber wird im Verfahren entschieden.
+Muss gepflanzt werden, übernehme ich gerne die [Ersatzpflanzung](/leistungen/pflanzung/). Kann eine vorgeschriebene Ersatzpflanzung nachweislich nicht erfüllt werden, etwa weil kein Platz ist, ist stattdessen eine Ausgleichszahlung zu leisten. Auch darüber wird im Verfahren entschieden.
 
 ## Und wenn der Baum sofort weg muss?
 

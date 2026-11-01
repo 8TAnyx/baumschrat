@@ -5,7 +5,7 @@ description: "Rund 500.000 Festmeter Schadholz, Schneebruch im Februar, ein troc
 image: "../../assets/fotos/work-7.jpg"
 imageAlt: "Baumpfleger mit Helm in einer Baumkrone über dem Grazer Umland"
 thema: "Borkenkäfer"
-leistungen: ["borkenkaefer", "drohneninspektion", "baumfaellung"]
+leistungen: ["borkenkaefer", "drohneninspektion", "sonderfaellung"]
 ---
 
 Wer im Spätsommer 2026 durch das Grazer Umland gefahren ist, hat sie gesehen: einzelne Fichten und ganze Baumgruppen mit fuchsroten Kronen. Das ist das sichtbare Ergebnis eines Jahres, in dem für den Borkenkäfer vieles gepasst hat.

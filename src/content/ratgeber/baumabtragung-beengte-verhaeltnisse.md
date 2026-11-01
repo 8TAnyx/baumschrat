@@ -5,7 +5,7 @@ description: "Wie Bäume in Gärten, an Gebäuden oder in engen Innenhöfen sich
 image: "../../assets/fotos/work-1.jpg"
 imageAlt: "Baumkletterer am verbliebenen Stamm einer Fichte vor blauem Himmel"
 thema: "Abtragungen"
-leistungen: ["baumfaellung"]
+leistungen: ["sonderfaellung", "baumfaellung"]
 ---
 
 In vielen Gärten, Innenhöfen oder direkt an Gebäuden fehlt schlicht der Platz für eine klassische Baumfällung.
