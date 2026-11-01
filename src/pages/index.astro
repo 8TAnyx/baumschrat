@@ -10,11 +10,10 @@ import CtaBand from '../components/CtaBand.astro';
 import { site, u } from '../data/site';
 import { faqAllgemein } from '../data/faq';
 import { faqLd } from '../data/seo';
-import heroImg from '../assets/fotos/work-1.jpg';
-import about1 from '../assets/fotos/work-9.jpg';
+import heroImg from '../assets/fotos/work-9.jpg';
+import about1 from '../assets/fotos/portraet-winter.jpg';
 import about2 from '../assets/fotos/work-7.jpg';
 
-const regionen = (await getCollection('regionen')).sort((a, b) => a.data.order - b.data.order);
 const artikel = (await getCollection('ratgeber', (p) => !p.data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
@@ -34,42 +33,37 @@ const schritte = [
   image={heroImg}
   jsonLd={faqLd(faq)}
 >
-  <!-- Hero -->
-  <section class="relative overflow-hidden bg-wald-900">
-    <div class="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-wald-700/40 blur-3xl"></div>
-    <div class="container-page relative grid items-center gap-10 py-12 md:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:py-20">
-      <div>
+  <!-- Hero: ganze Breite, Foto mit Schloss Eggenberg im Hintergrund -->
+  <section class="relative isolate overflow-hidden bg-wald-950">
+    <Image
+      src={heroImg}
+      alt="Daniel Lindner mit Helm und Seil in einer Baumkrone, im Hintergrund Schloss Eggenberg"
+      widths={[800, 1280, 1920, 2560]} width={2560}
+      sizes="100vw"
+      class="absolute inset-0 -z-10 h-full w-full object-cover object-[55%_65%]"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 -z-10 bg-wald-950/70 lg:bg-transparent lg:bg-gradient-to-r lg:from-wald-950/85 lg:from-25% lg:via-wald-950/35 lg:via-50% lg:to-transparent lg:to-70%"></div>
+    <div class="container-page py-16 md:py-24 lg:py-32">
+      <div class="max-w-2xl [text-shadow:0_1px_12px_rgb(0_0_0/0.45)]">
         <p class="eyebrow !text-moos-400">Baumpflege · Baumkontrolle · Spezialfällungen</p>
         <h1 class="mt-4 text-4xl leading-[1.08] text-white sm:text-5xl lg:text-6xl">
           Ihr Baumpfleger für Graz, Graz-Umgebung und das Mürztal.
         </h1>
         <p class="mt-6 max-w-xl text-lg text-wald-100 md:text-xl">
-          Fachgerechte Baumpflege nach ÖNORM L 1122, Baumkontrolle, Drohnen-Baumprüfung und sichere Fällungen mit Seilklettertechnik – persönlich ausgeführt von {site.owner}.
+          Fachgerechte Baumpflege nach ÖNORM L 1122, Baumkontrolle, Drohnen-Baumprüfung und sichere Fällungen mit Seilklettertechnik – persönlich ausgeführt von {site.owner}, European Tree Worker.
         </p>
         <div class="mt-8 flex flex-col gap-3 sm:flex-row">
           <a href={u('/kontakt/')} class="btn-primary"><Icon name="camera" class="h-5 w-5" /> Kostenloses Angebot</a>
           <a href={site.phoneHref} class="btn-ghost"><Icon name="phone" class="h-5 w-5" /> {site.phone}</a>
         </div>
-        <ul class="mt-8 grid gap-2 text-sm text-wald-100 sm:grid-cols-3">
+        <ul class="mt-8 grid gap-2 text-sm text-wald-100 sm:grid-cols-2">
+          <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> European Tree Worker (ETW)</li>
           <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Arbeit nach ÖNORM</li>
           <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Besichtigung gratis</li>
           <li class="flex items-center gap-2"><Icon name="check-circle" class="h-5 w-5 text-moos-400" /> Antwort in 24 h</li>
         </ul>
-      </div>
-      <div class="relative mx-auto w-full max-w-sm lg:max-w-none">
-        <Image
-          src={heroImg}
-          alt="Baumkletterer am verbliebenen Stamm einer Fichte vor blauem Himmel"
-          widths={[480, 720, 960]} width={960}
-          sizes="(min-width: 1024px) 440px, (min-width: 640px) 384px, 100vw"
-          class="aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl ring-1 ring-white/10"
-          loading="eager"
-          fetchpriority="high"
-        />
-        <div class="absolute -bottom-5 -left-4 flex items-center gap-3 rounded-2xl bg-papier px-4 py-3 shadow-xl sm:-left-8">
-          <span class="flex h-10 w-10 items-center justify-center rounded-full bg-wald-700 text-white"><Icon name="rope" class="h-5 w-5" /></span>
-          <span class="text-sm leading-tight"><strong class="block text-wald-900">Seilklettertechnik</strong>auch wo kein Kran hinkommt</span>
-        </div>
       </div>
     </div>
   </section>
@@ -112,16 +106,16 @@ const schritte = [
   <!-- Über mich -->
   <section class="py-16 md:py-24" id="ueber-mich">
     <div class="container-page grid items-center gap-12 lg:grid-cols-2">
-      <div class="relative order-last lg:order-first">
-        <Image src={about1} alt="Daniel Lindner mit Helm und Seil in einer Baumkrone, im Hintergrund ein Schloss" widths={[480, 800]} width={800} sizes="(min-width: 1024px) 420px, 80vw" class="aspect-[4/3] w-4/5 rounded-3xl object-cover shadow-lg" />
-        <Image src={about2} alt="Daniel Lindner im Wipfel eines Baumes mit Blick über das Grazer Umland" widths={[360, 600]} width={600} sizes="(min-width: 1024px) 300px, 55vw" class="absolute -bottom-8 right-0 aspect-square w-1/2 rounded-3xl border-8 border-papier object-cover shadow-lg" />
+      <div class="order-last grid grid-cols-2 gap-4 lg:order-first">
+        <Image src={about1} alt="Daniel Lindner mit Helm beim Klettern in einem verschneiten Bergtal" widths={[360, 600]} width={600} sizes="(min-width: 1024px) 280px, 45vw" class="aspect-[3/4] w-full rounded-3xl object-cover object-[30%_50%] shadow-lg" />
+        <Image src={about2} alt="Baumpfleger im Wipfel eines Baumes mit Blick über das Grazer Umland" widths={[360, 600]} width={600} sizes="(min-width: 1024px) 280px, 45vw" class="mt-10 aspect-[3/4] w-full rounded-3xl object-cover object-[20%_50%] shadow-lg" />
       </div>
       <div>
         <p class="eyebrow">Über mich</p>
         <h2 class="mt-2 text-3xl md:text-4xl">Ein Ansprechpartner – vom ersten Anruf bis zum letzten Ast</h2>
         <div class="mt-5 space-y-4 text-lg text-tinte/80">
           <p>
-            Als Einmann-Betrieb stehe ich persönlich für Qualität, Zuverlässigkeit und fachgerechte Ausführung – ob es darum geht, einen Baum zu fällen oder ihn durch fachkundige Pflege zu erhalten. Durch meine Ausbildung und die enge Vernetzung mit erfahrenen Kollegen kann ich Ihnen Lösungen für alle Baumarbeiten anbieten.
+            Als zertifizierter <strong>European Tree Worker (ETW)</strong> und Einmann-Betrieb stehe ich persönlich für Qualität, Zuverlässigkeit und fachgerechte Ausführung – ob es darum geht, einen Baum zu fällen oder ihn durch fachkundige Pflege zu erhalten. Durch meine Ausbildung und die enge Vernetzung mit erfahrenen Kollegen kann ich Ihnen Lösungen für alle Baumarbeiten anbieten.
           </p>
           <p>
             Mein Einsatzgebiet umfasst das gesamte Grazer Stadtgebiet, Graz-Umgebung und reicht bis ins Mürztal. Dabei lege ich besonderen Wert auf Sicherheit, Baumschutz und ehrliche Beratung.
@@ -162,28 +156,6 @@ const schritte = [
           ))
         }
       </ol>
-    </div>
-  </section>
-
-  <!-- Einsatzgebiet -->
-  <section class="py-16 md:py-24">
-    <div class="container-page">
-      <p class="eyebrow">Einsatzgebiet</p>
-      <h2 class="mt-2 text-3xl md:text-4xl">Graz, Graz-Umgebung und Mürztal</h2>
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
-        {
-          regionen.map((r) => (
-            <a href={u(`/einsatzgebiet/${r.id}/`)} class="group relative flex min-h-64 flex-col justify-end overflow-hidden rounded-2xl p-6 text-white">
-              <Image src={r.data.image} alt="" widths={[400, 700]} width={700} sizes="(min-width: 768px) 33vw, 100vw" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-gradient-to-t from-wald-950/90 via-wald-950/40 to-transparent" />
-              <div class="relative">
-                <h3 class="text-2xl text-white">{r.data.name}</h3>
-                <p class="mt-1 text-sm text-wald-100">{r.data.teaser}</p>
-              </div>
-            </a>
-          ))
-        }
-      </div>
     </div>
   </section>
 
