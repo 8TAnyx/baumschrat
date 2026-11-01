@@ -8,12 +8,13 @@ export const site = {
   phone: '+43 650 9999539',
   phoneHref: 'tel:+436509999539',
   email: 'daniel@baumschrat.at',
-  // Straße und PLZ nur im Impressum anzeigen (Wunsch von Daniel)
+  // Straße und PLZ sichtbar nur im Impressum; in den strukturierten Daten für Google bleiben sie (Wunsch von Daniel)
   street: 'Janzgasse 14',
   zip: '8020',
   city: 'Graz',
   region: 'Steiermark',
   country: 'AT',
+  geo: { lat: 47.0667, lng: 15.4206 },
   areas: ['Graz', 'Steiermark'],
   wkoUrl:
     'https://firmen.wko.at/daniel-lindner/steiermark/?firmaid=a3580f35-b993-4cd0-9f3b-1cc9965627b8',
